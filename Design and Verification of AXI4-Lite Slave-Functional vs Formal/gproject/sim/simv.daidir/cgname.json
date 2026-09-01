@@ -1,0 +1,98 @@
+{
+    "_vcs_DPI_package": [
+        "_vcs_DPI_package",
+        "uM9F1",
+        "module",
+        1
+    ],
+    "vcs_paramclassrepository": [
+        "vcs_paramclassrepository",
+        "hEeZs",
+        "module",
+        2
+    ],
+    "_vcs_unit__2850008194": [
+        "_vcs_unit__2850008194",
+        "M5KV6",
+        "module",
+        3
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        4
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module",
+        5
+    ],
+    "_vcs_msglog": [
+        "_vcs_msglog",
+        "zQBzV",
+        "module",
+        6
+    ],
+    "uvm_custom_install_recording": [
+        "uvm_custom_install_recording",
+        "nhiwz",
+        "module",
+        7
+    ],
+    "uvm_custom_install_verdi_recording": [
+        "uvm_custom_install_verdi_recording",
+        "EbjT3",
+        "module",
+        8
+    ],
+    "axi4lite_if": [
+        "axi4lite_if",
+        "t7Y6i",
+        "module",
+        9
+    ],
+    "axi4lite_agent_pkg": [
+        "axi4lite_agent_pkg",
+        "GgHQU",
+        "module",
+        10
+    ],
+    "axi4lite_seq_pkg": [
+        "axi4lite_seq_pkg",
+        "spCWN",
+        "module",
+        11
+    ],
+    "axi4lite_env_pkg": [
+        "axi4lite_env_pkg",
+        "cILmL",
+        "module",
+        12
+    ],
+    "axi4lite_test_pkg": [
+        "axi4lite_test_pkg",
+        "hM8sL",
+        "module",
+        13
+    ],
+    "axi4lite_slave_example": [
+        "axi4lite_slave_example",
+        "JykJh",
+        "module",
+        14
+    ],
+    "tb_top": [
+        "tb_top",
+        "jdPWL",
+        "module",
+        15
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        16
+    ]
+}

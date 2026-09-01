@@ -1,0 +1,101 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Jun  6 19:44 2026
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+Warning-[MON-RTOPTIGN] Runtime option ignored.
+  Ignoring -cm_hier for runtime. -cm_hier can be passed only at compile 
+  time.No action will be taken for this option at runtime.
+  Please refer to VCS documentation for more information.
+
+
+ VCS Coverage Metrics Release T-2022.06-SP1_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test axi4lite_write_test...
+VCD+ Writer T-2022.06-SP1_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+UVM_INFO ../tests/axi4lite_base_test.sv(44) @ 0: uvm_test_top [TEST] Applying reset...
+UVM_INFO ../tests/axi4lite_base_test.sv(63) @ 245000: uvm_test_top [TEST] Reset released
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(16) @ 245000: uvm_test_top.env.agt.sqr@@seq [SEQ] === Single Write Sequence ===
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 285000: uvm_test_top.env.agt.sqr@@seq [SEQ] Wrote 0xdeadbeef to addr 0x0
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 325000: uvm_test_top.env.agt.sqr@@seq [SEQ] Wrote 0xcafebabe to addr 0x4
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 365000: uvm_test_top.env.agt.sqr@@seq [SEQ] Wrote 0x12345678 to addr 0x8
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 405000: uvm_test_top.env.agt.sqr@@seq [SEQ] Wrote 0xa5a5a5a5 to addr 0xc
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 445000: uvm_test_top.env.agt.sqr@@seq [SEQ] Read 0xdeadbeef from addr 0x0 (exp 0xdeadbeef)
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 485000: uvm_test_top.env.agt.sqr@@seq [SEQ] Read 0xcafebabe from addr 0x4 (exp 0xcafebabe)
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 525000: uvm_test_top.env.agt.sqr@@seq [SEQ] Read 0x12345678 from addr 0x8 (exp 0x12345678)
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 565000: uvm_test_top.env.agt.sqr@@seq [SEQ] Read 0xa5a5a5a5 from addr 0xc (exp 0xa5a5a5a5)
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(429) @ 665000: uvm_test_top.env.agt.cov [COV] === AXI4-Lite Functional Coverage Report ===
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(430) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_transaction : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(431) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_write_strobe: 39.39%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(432) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_write_data  : 22.22%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(433) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_prot        : 41.67%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(434) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_ordering    : 91.67%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(435) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_delays      : 58.33%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(436) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_raw         : 50.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(437) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_handshake   : 83.33%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(438) @ 665000: uvm_test_top.env.agt.cov [COV]   cg_reset       : 0.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(439) @ 665000: uvm_test_top.env.agt.cov [COV]   OVERALL        : 50.33%
+UVM_INFO ../env/axi4lite_scoreboard.sv(105) @ 665000: uvm_test_top.env.scb [SCB] === Scoreboard Summary ===
+UVM_INFO ../env/axi4lite_scoreboard.sv(106) @ 665000: uvm_test_top.env.scb [SCB]   Writes: 4 total, 4 pass, 0 fail
+UVM_INFO ../env/axi4lite_scoreboard.sv(108) @ 665000: uvm_test_top.env.scb [SCB]   Reads : 4 total, 4 pass, 0 fail
+UVM_INFO ../env/axi4lite_scoreboard.sv(115) @ 665000: uvm_test_top.env.scb [SCB] ALL CHECKS PASSED
+UVM_INFO ../tests/axi4lite_base_test.sv(75) @ 665000: uvm_test_top [TEST] ==================================================
+UVM_INFO ../tests/axi4lite_base_test.sv(77) @ 665000: uvm_test_top [TEST]                   TEST PASSED                     
+UVM_INFO ../tests/axi4lite_base_test.sv(81) @ 665000: uvm_test_top [TEST] ==================================================
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 665000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 665000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   32
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV]    11
+[RNTST]     1
+[SCB]     4
+[SEQ]     9
+[TEST]     5
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time               665000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 665000 ps
+CPU Time:      0.510 seconds;       Data structure size:   0.6Mb
+Sat Jun  6 19:44:08 2026

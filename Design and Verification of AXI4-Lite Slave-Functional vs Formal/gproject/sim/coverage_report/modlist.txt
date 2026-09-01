@@ -1,0 +1,17 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 94.82 100.00  91.77 --     100.00  87.50 
+
+
+Total modules in report: 6
+-------------------------------------------------------------------------------
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME                   
+ 33.33 --     --     --     --      33.33 uvm_pkg                
+ 95.92 --      91.84 --     --     100.00 axi4lite_if            
+ 97.24 100.00  91.72 --     100.00 --     axi4lite_slave_example 
+100.00 --     --     --     --     100.00 axi4lite_test_pkg      
+100.00 --     --     --     --     100.00 axi4lite_seq_pkg       
+--     --     --     --     --     --     tb_top                 
+

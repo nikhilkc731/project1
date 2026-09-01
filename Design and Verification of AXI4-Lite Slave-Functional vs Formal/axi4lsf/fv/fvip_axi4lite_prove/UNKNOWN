@@ -1,0 +1,7 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:41 (41)
+Elapsed process time [H:MM:SS (secs)]: 0:01:13 (73)
+engine_0 (smtbmc --unroll boolector) returned pass for basecase
+engine_0 (smtbmc --unroll boolector) returned FAIL for induction
+counterexample trace [induction]: engine_0/trace_induct.vcd
+counterexample trace [induction]: engine_0/trace_induct.yw
+  failed assertion fvip_top.u_props._witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_454_607 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:454.13-454.28

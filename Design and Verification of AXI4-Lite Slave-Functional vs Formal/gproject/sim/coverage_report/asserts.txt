@@ -1,0 +1,58 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          16          0         0
+Category 0     16          0         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          16          0         0
+Severity 0     16          0         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         16  100.00
+Uncovered             2   12.50
+Success              14   87.50
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2   12.50
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                                ASSERTIONS                                 CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+axi4lite_seq_pkg.\axi4lite_base_seq::axi_read .unnamed$$_0                        0        0      181            181        0          0
+axi4lite_seq_pkg.\axi4lite_base_seq::axi_write .unnamed$$_0                       0        0      259            259        0          0
+axi4lite_seq_pkg.\axi4lite_random_seq::body .unnamed$$_0                          0        0      400            400        0          0
+axi4lite_test_pkg.\axi4lite_full_coverage_test::run_sequences .unnamed$$_0        0        0        1              1        0          0
+axi4lite_test_pkg.\axi4lite_random_test::run_sequences .unnamed$$_0               0        0        1              1        0          0
+tb_top.axi_if.a1                                                                  0        0     5149            230        0          0
+tb_top.axi_if.a2                                                                  0        0     5149            485        0          0
+tb_top.axi_if.a3                                                                  0        0     5149            485        0          0
+tb_top.axi_if.a4                                                                  0        0     5149            405        0          0
+tb_top.axi_if.a5                                                                  0        0     5149            485        0          0
+tb_top.axi_if.a6                                                                  0        0     5149            405        0          0
+tb_top.axi_if.a7                                                                  0        0     5149            492        0          0
+tb_top.axi_if.a8                                                                  0        0     5149            419        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0                     0        0      484            484        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+

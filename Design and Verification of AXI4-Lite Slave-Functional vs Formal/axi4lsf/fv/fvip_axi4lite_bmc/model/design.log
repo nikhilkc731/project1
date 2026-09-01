@@ -1,0 +1,1100 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64+187 (git sha1 49b4f6d81, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: /home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv
+Parsing SystemVerilog input from `/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv' to AST representation.
+Generating RTLIL representation for module `\axi4lite_slave_example'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv
+Parsing SystemVerilog input from `/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv' to AST representation.
+Generating RTLIL representation for module `\fvip_axi4lite_props'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/nikhil/projects/axi4lsf/fv/fvip_top.sv
+Parsing SystemVerilog input from `/home/nikhil/projects/axi4lsf/fv/fvip_top.sv' to AST representation.
+Generating RTLIL representation for module `\fvip_top'.
+Successfully finished Verilog frontend.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \fvip_top
+Used module:     \fvip_axi4lite_props
+Used module:     \axi4lite_slave_example
+Parameter \C_AXI_DATA_WIDTH = 32
+Parameter \C_AXI_ADDR_WIDTH = 4
+Parameter \NUM_REGS = 4
+
+4.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\fvip_axi4lite_props'.
+Parameter \C_AXI_DATA_WIDTH = 32
+Parameter \C_AXI_ADDR_WIDTH = 4
+Parameter \NUM_REGS = 4
+Generating RTLIL representation for module `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Parameter \C_AXI_DATA_WIDTH = 32
+Parameter \C_AXI_ADDR_WIDTH = 4
+
+4.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\axi4lite_slave_example'.
+Parameter \C_AXI_DATA_WIDTH = 32
+Parameter \C_AXI_ADDR_WIDTH = 4
+Generating RTLIL representation for module `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+
+4.1.4. Analyzing design hierarchy..
+Top module:  \fvip_top
+Used module:     $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+Used module:     $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+
+4.1.5. Analyzing design hierarchy..
+Top module:  \fvip_top
+Used module:     $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+Used module:     $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+Removing unused module `\fvip_axi4lite_props'.
+Removing unused module `\axi4lite_slave_example'.
+Removed 2 unused modules.
+Module fvip_top directly or indirectly contains formal properties -> setting "keep" attribute.
+Module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:85$753 in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Marked 2 switch rules as full_case in process $proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:75$746 in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Marked 6 switch rules as full_case in process $proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684 in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Marked 2 switch rules as full_case in process $proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677 in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Marked 2 switch rules as full_case in process $proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:39$670 in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Marked 1 switch rules as full_case in process $proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549 in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 3 redundant assignments.
+Promoted 56 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:96$661'.
+  Set init value: \f_past_valid = 1'0
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~67 debug messages>
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:85$753'.
+     1/3: $0\S_AXI_RVALID[0:0]
+     2/3: $0\S_AXI_RRESP[1:0]
+     3/3: $0\S_AXI_RDATA[31:0]
+Creating decoders for process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:75$746'.
+     1/3: $0\S_AXI_ARREADY[0:0]
+     2/3: $0\ar_addr_latch[3:0]
+     3/3: $0\ar_pending[0:0]
+Creating decoders for process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+     1/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$745
+     2/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_DATA[31:0]$744
+     3/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_ADDR[1:0]$743
+     4/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$742
+     5/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_DATA[31:0]$741
+     6/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_ADDR[1:0]$740
+     7/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$739
+     8/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_DATA[31:0]$738
+     9/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_ADDR[1:0]$737
+    10/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$736
+    11/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_DATA[31:0]$735
+    12/44: $3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_ADDR[1:0]$734
+    13/44: $2\i[31:0]
+    14/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$733
+    15/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_DATA[31:0]$732
+    16/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_ADDR[1:0]$731
+    17/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$730
+    18/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_DATA[31:0]$729
+    19/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_ADDR[1:0]$728
+    20/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$727
+    21/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_DATA[31:0]$726
+    22/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_ADDR[1:0]$725
+    23/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$724
+    24/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_DATA[31:0]$723
+    25/44: $2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_ADDR[1:0]$722
+    26/44: $1\i[31:0]
+    27/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$705
+    28/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$704
+    29/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$703
+    30/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$702
+    31/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$717
+    32/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_DATA[31:0]$716
+    33/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_ADDR[1:0]$715
+    34/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$714
+    35/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_DATA[31:0]$713
+    36/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_ADDR[1:0]$712
+    37/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$711
+    38/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_DATA[31:0]$710
+    39/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_ADDR[1:0]$709
+    40/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$708
+    41/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_DATA[31:0]$707
+    42/44: $1$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_ADDR[1:0]$706
+    43/44: $0\S_AXI_BVALID[0:0]
+    44/44: $0\S_AXI_BRESP[1:0]
+Creating decoders for process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677'.
+     1/4: $0\S_AXI_WREADY[0:0]
+     2/4: $0\w_strb_latch[3:0]
+     3/4: $0\w_data_latch[31:0]
+     4/4: $0\w_pending[0:0]
+Creating decoders for process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:39$670'.
+     1/3: $0\S_AXI_AWREADY[0:0]
+     2/3: $0\aw_addr_latch[3:0]
+     3/3: $0\aw_pending[0:0]
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:96$661'.
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:561$646'.
+     1/4: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566$657_EN
+     2/4: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:565$653_EN
+     3/4: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:564$651_EN
+     4/4: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:563$649_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:503$637'.
+     1/1: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505$642_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:498$631'.
+     1/1: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:500$633_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:493$625'.
+     1/1: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495$627_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:488$621'.
+     1/1: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:490$623_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:483$617'.
+     1/1: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:485$619_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:478$613'.
+     1/1: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:480$615_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:473$609'.
+     1/1: $cover$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:475$611_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:448$594'.
+     1/5: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:454$607_EN
+     2/5: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:453$605_EN
+     3/5: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:452$603_EN
+     4/5: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:451$601_EN
+     5/5: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:450$599_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:379$590'.
+     1/1: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:382$592_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:370$584'.
+     1/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:374$588_EN
+     2/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:373$586_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:350$579'.
+     1/1: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:352$581_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:345$575'.
+     1/1: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:347$577_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:338$567'.
+     1/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:341$572_EN
+     2/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:340$569_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:331$561'.
+     1/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:334$565_EN
+     2/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:333$563_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+     1/5: $0\f_r_cnt[7:0]
+     2/5: $0\f_ar_cnt[7:0]
+     3/5: $0\f_b_cnt[7:0]
+     4/5: $0\f_w_cnt[7:0]
+     5/5: $0\f_aw_cnt[7:0]
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:276$536'.
+     1/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280$547_EN
+     2/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279$545_EN
+     3/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278$543_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:255$531'.
+     1/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:259$535_EN
+     2/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:258$534_EN
+     3/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:257$533_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:234$525'.
+     1/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:237$529_EN
+     2/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:236$527_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+     1/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:222$523_EN
+     2/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:221$521_EN
+     3/3: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:220$520_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:208$498'.
+     1/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:212$508_EN
+     2/2: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:211$507_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:181$478'.
+     1/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:190$496_EN
+     2/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:189$494_EN
+     3/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:188$492_EN
+     4/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:187$490_EN
+     5/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:186$488_EN
+     6/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:185$486_EN
+     7/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:184$484_EN
+     8/8: $assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:183$482_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+     1/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:155$476_EN
+     2/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:154$474_EN
+     3/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:153$473_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+     1/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:145$462_EN
+     2/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:144$460_EN
+     3/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:143$459_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+     1/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:135$448_EN
+     2/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:134$446_EN
+     3/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:133$445_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:105$423'.
+     1/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:111$434_EN
+     2/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:110$432_EN
+     3/3: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:109$430_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:100$419'.
+     1/1: $assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:102$421_EN
+Creating decoders for process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:97$418'.
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_RDATA' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:85$753'.
+  created $dff cell `$procdff$1292' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_RRESP' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:85$753'.
+  created $dff cell `$procdff$1293' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_RVALID' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:85$753'.
+  created $dff cell `$procdff$1294' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_ARREADY' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:75$746'.
+  created $dff cell `$procdff$1295' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\ar_pending' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:75$746'.
+  created $dff cell `$procdff$1296' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\ar_addr_latch' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:75$746'.
+  created $dff cell `$procdff$1297' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\i' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1298' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_BRESP' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1299' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_BVALID' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1300' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1301' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1302' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1303' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1304' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_ADDR' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1305' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_DATA' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1306' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1307' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_ADDR' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1308' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_DATA' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1309' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1310' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_ADDR' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1311' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_DATA' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1312' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1313' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_ADDR' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1314' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_DATA' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1315' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+  created $dff cell `$procdff$1316' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_WREADY' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677'.
+  created $dff cell `$procdff$1317' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\w_pending' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677'.
+  created $dff cell `$procdff$1318' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\w_data_latch' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677'.
+  created $dff cell `$procdff$1319' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\w_strb_latch' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677'.
+  created $dff cell `$procdff$1320' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\S_AXI_AWREADY' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:39$670'.
+  created $dff cell `$procdff$1321' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\aw_pending' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:39$670'.
+  created $dff cell `$procdff$1322' with positive edge clock.
+Creating register for signal `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.\aw_addr_latch' using process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:39$670'.
+  created $dff cell `$procdff$1323' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566$417$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:561$646'.
+  created $dff cell `$procdff$1324' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:504$415$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:503$637'.
+  created $dff cell `$procdff$1325' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505$416$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:503$637'.
+  created $dff cell `$procdff$1326' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:449$414$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:448$594'.
+  created $dff cell `$procdff$1327' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.\f_aw_cnt' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+  created $dff cell `$procdff$1328' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.\f_w_cnt' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+  created $dff cell `$procdff$1329' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.\f_b_cnt' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+  created $dff cell `$procdff$1330' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.\f_ar_cnt' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+  created $dff cell `$procdff$1331' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.\f_r_cnt' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+  created $dff cell `$procdff$1332' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:277$410$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:276$536'.
+  created $dff cell `$procdff$1333' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278$411$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:276$536'.
+  created $dff cell `$procdff$1334' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279$412$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:276$536'.
+  created $dff cell `$procdff$1335' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280$413$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:276$536'.
+  created $dff cell `$procdff$1336' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:218$405$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+  created $dff cell `$procdff$1337' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:219$406$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+  created $dff cell `$procdff$1338' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:219$407$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+  created $dff cell `$procdff$1339' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:221$408$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+  created $dff cell `$procdff$1340' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:222$409$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+  created $dff cell `$procdff$1341' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:209$401$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:208$498'.
+  created $dff cell `$procdff$1342' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:210$402$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:208$498'.
+  created $dff cell `$procdff$1343' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:210$403$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:208$498'.
+  created $dff cell `$procdff$1344' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:212$404$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:208$498'.
+  created $dff cell `$procdff$1345' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:182$400$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:181$478'.
+  created $dff cell `$procdff$1346' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:151$395$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+  created $dff cell `$procdff$1347' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:152$396$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+  created $dff cell `$procdff$1348' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:152$397$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+  created $dff cell `$procdff$1349' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:154$398$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+  created $dff cell `$procdff$1350' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:155$399$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+  created $dff cell `$procdff$1351' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:141$390$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+  created $dff cell `$procdff$1352' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:142$391$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+  created $dff cell `$procdff$1353' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:142$392$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+  created $dff cell `$procdff$1354' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:144$393$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+  created $dff cell `$procdff$1355' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:145$394$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+  created $dff cell `$procdff$1356' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:131$385$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+  created $dff cell `$procdff$1357' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:132$386$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+  created $dff cell `$procdff$1358' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:132$387$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+  created $dff cell `$procdff$1359' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:134$388$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+  created $dff cell `$procdff$1360' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:135$389$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+  created $dff cell `$procdff$1361' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:108$381$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:105$423'.
+  created $dff cell `$procdff$1362' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:108$382$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:105$423'.
+  created $dff cell `$procdff$1363' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:110$383$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:105$423'.
+  created $dff cell `$procdff$1364' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:111$384$0' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:105$423'.
+  created $dff cell `$procdff$1365' with positive edge clock.
+Creating register for signal `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.\f_past_valid' using process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:97$418'.
+  created $dff cell `$procdff$1366' with positive edge clock.
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:85$753'.
+Removing empty process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:85$753'.
+Found and cleaned up 3 empty switches in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:75$746'.
+Removing empty process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:75$746'.
+Found and cleaned up 7 empty switches in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+Removing empty process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:60$684'.
+Found and cleaned up 3 empty switches in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677'.
+Removing empty process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:49$677'.
+Found and cleaned up 3 empty switches in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:39$670'.
+Removing empty process `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$proc$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:39$670'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:96$661'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:561$646'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:561$646'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:503$637'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:503$637'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:498$631'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:498$631'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:493$625'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:493$625'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:488$621'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:488$621'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:483$617'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:483$617'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:478$613'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:478$613'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:473$609'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:473$609'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:448$594'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:448$594'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:379$590'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:379$590'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:370$584'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:370$584'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:350$579'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:350$579'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:345$575'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:345$575'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:338$567'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:338$567'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:331$561'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:331$561'.
+Found and cleaned up 6 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:315$549'.
+Found and cleaned up 4 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:276$536'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:276$536'.
+Found and cleaned up 4 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:255$531'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:255$531'.
+Found and cleaned up 3 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:234$525'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:234$525'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:217$510'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:208$498'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:208$498'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:181$478'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:181$478'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:150$464'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:140$450'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:130$436'.
+Found and cleaned up 2 empty switches in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:105$423'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:105$423'.
+Found and cleaned up 1 empty switch in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:100$419'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:100$419'.
+Removing empty process `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$proc$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:97$418'.
+Cleaned up 67 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fvip_top.
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+<suppressed ~57 debug messages>
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+<suppressed ~17 debug messages>
+
+4.3. Executing FUTURE pass.
+
+4.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fvip_top.
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+
+4.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fvip_top..
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Removed 27 unused cells and 416 unused wires.
+<suppressed ~30 debug messages>
+
+4.6. Executing CHECK pass (checking for obvious problems).
+Checking module fvip_top...
+Warning: Wire fvip_top.\aresetn is used but has no driver.
+Warning: Wire fvip_top.\awaddr [3] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [2] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [1] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [0] is used but has no driver.
+Warning: Wire fvip_top.\awprot [2] is used but has no driver.
+Warning: Wire fvip_top.\awprot [1] is used but has no driver.
+Warning: Wire fvip_top.\awprot [0] is used but has no driver.
+Warning: Wire fvip_top.\awvalid is used but has no driver.
+Warning: Wire fvip_top.\wdata [31] is used but has no driver.
+Warning: Wire fvip_top.\wdata [30] is used but has no driver.
+Warning: Wire fvip_top.\wdata [29] is used but has no driver.
+Warning: Wire fvip_top.\wdata [28] is used but has no driver.
+Warning: Wire fvip_top.\wdata [27] is used but has no driver.
+Warning: Wire fvip_top.\wdata [26] is used but has no driver.
+Warning: Wire fvip_top.\wdata [25] is used but has no driver.
+Warning: Wire fvip_top.\wdata [24] is used but has no driver.
+Warning: Wire fvip_top.\wdata [23] is used but has no driver.
+Warning: Wire fvip_top.\wdata [22] is used but has no driver.
+Warning: Wire fvip_top.\wdata [21] is used but has no driver.
+Warning: Wire fvip_top.\wdata [20] is used but has no driver.
+Warning: Wire fvip_top.\wdata [19] is used but has no driver.
+Warning: Wire fvip_top.\wdata [18] is used but has no driver.
+Warning: Wire fvip_top.\wdata [17] is used but has no driver.
+Warning: Wire fvip_top.\wdata [16] is used but has no driver.
+Warning: Wire fvip_top.\wdata [15] is used but has no driver.
+Warning: Wire fvip_top.\wdata [14] is used but has no driver.
+Warning: Wire fvip_top.\wdata [13] is used but has no driver.
+Warning: Wire fvip_top.\wdata [12] is used but has no driver.
+Warning: Wire fvip_top.\wdata [11] is used but has no driver.
+Warning: Wire fvip_top.\wdata [10] is used but has no driver.
+Warning: Wire fvip_top.\wdata [9] is used but has no driver.
+Warning: Wire fvip_top.\wdata [8] is used but has no driver.
+Warning: Wire fvip_top.\wdata [7] is used but has no driver.
+Warning: Wire fvip_top.\wdata [6] is used but has no driver.
+Warning: Wire fvip_top.\wdata [5] is used but has no driver.
+Warning: Wire fvip_top.\wdata [4] is used but has no driver.
+Warning: Wire fvip_top.\wdata [3] is used but has no driver.
+Warning: Wire fvip_top.\wdata [2] is used but has no driver.
+Warning: Wire fvip_top.\wdata [1] is used but has no driver.
+Warning: Wire fvip_top.\wdata [0] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [3] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [2] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [1] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [0] is used but has no driver.
+Warning: Wire fvip_top.\wvalid is used but has no driver.
+Warning: Wire fvip_top.\bready is used but has no driver.
+Warning: Wire fvip_top.\araddr [3] is used but has no driver.
+Warning: Wire fvip_top.\araddr [2] is used but has no driver.
+Warning: Wire fvip_top.\araddr [1] is used but has no driver.
+Warning: Wire fvip_top.\araddr [0] is used but has no driver.
+Warning: Wire fvip_top.\arprot [2] is used but has no driver.
+Warning: Wire fvip_top.\arprot [1] is used but has no driver.
+Warning: Wire fvip_top.\arprot [0] is used but has no driver.
+Warning: Wire fvip_top.\arvalid is used but has no driver.
+Warning: Wire fvip_top.\rready is used but has no driver.
+Checking module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example...
+Checking module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props...
+Found and reported 56 problems.
+
+4.7. Executing OPT pass (performing simple optimizations).
+
+4.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fvip_top.
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+
+4.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fvip_top'.
+Computing hashes of 2 cells of `\fvip_top'.
+Finding duplicate cells in `\fvip_top'.
+Finding identical cells in module `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 157 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 154 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 315 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 283 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 282 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 281 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+<suppressed ~102 debug messages>
+Removed a total of 37 cells.
+
+4.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fvip_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$980.
+    dead port 2/2 on $mux $procmux$974.
+    dead port 2/2 on $mux $procmux$968.
+    dead port 2/2 on $mux $procmux$962.
+    dead port 2/2 on $mux $procmux$956.
+    dead port 2/2 on $mux $procmux$950.
+    dead port 2/2 on $mux $procmux$944.
+    dead port 2/2 on $mux $procmux$938.
+    dead port 2/2 on $mux $procmux$932.
+    dead port 2/2 on $mux $procmux$926.
+    dead port 2/2 on $mux $procmux$920.
+    dead port 2/2 on $mux $procmux$914.
+    dead port 2/2 on $mux $procmux$902.
+    dead port 2/2 on $mux $procmux$899.
+    dead port 2/2 on $mux $procmux$893.
+    dead port 2/2 on $mux $procmux$890.
+    dead port 2/2 on $mux $procmux$884.
+    dead port 2/2 on $mux $procmux$881.
+    dead port 2/2 on $mux $procmux$875.
+    dead port 2/2 on $mux $procmux$872.
+    dead port 2/2 on $mux $procmux$866.
+    dead port 2/2 on $mux $procmux$863.
+    dead port 2/2 on $mux $procmux$857.
+    dead port 2/2 on $mux $procmux$854.
+    dead port 2/2 on $mux $procmux$848.
+    dead port 2/2 on $mux $procmux$845.
+    dead port 2/2 on $mux $procmux$839.
+    dead port 2/2 on $mux $procmux$836.
+    dead port 2/2 on $mux $procmux$830.
+    dead port 2/2 on $mux $procmux$827.
+    dead port 2/2 on $mux $procmux$821.
+    dead port 2/2 on $mux $procmux$818.
+    dead port 2/2 on $mux $procmux$812.
+    dead port 2/2 on $mux $procmux$809.
+    dead port 2/2 on $mux $procmux$803.
+    dead port 2/2 on $mux $procmux$800.
+Running muxtree optimizer on module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 36 multiplexer ports.
+<suppressed ~303 debug messages>
+
+4.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fvip_top.
+  Optimizing cells in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+    Consolidated identical input bits for $mux cell $procmux$995:
+      Old ports: A=32'11111111111111111111111111111111, B=0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685
+      New ports: A=1'1, B=1'0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0]
+      New connections: $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [31:1] = { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$662_EN[31:0]$685 [0] }
+    Consolidated identical input bits for $mux cell $procmux$992:
+      Old ports: A=32'11111111111111111111111111111111, B=0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686
+      New ports: A=1'1, B=1'0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0]
+      New connections: $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [31:1] = { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$663_EN[31:0]$686 [0] }
+    Consolidated identical input bits for $mux cell $procmux$989:
+      Old ports: A=32'11111111111111111111111111111111, B=0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687
+      New ports: A=1'1, B=1'0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0]
+      New connections: $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [31:1] = { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$664_EN[31:0]$687 [0] }
+    Consolidated identical input bits for $mux cell $procmux$986:
+      Old ports: A=32'11111111111111111111111111111111, B=0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688
+      New ports: A=1'1, B=1'0, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0]
+      New connections: $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [31:1] = { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:63$665_EN[31:0]$688 [0] }
+    Consolidated identical input bits for $mux cell $procmux$879:
+      Old ports: A=0, B=255, Y=$procmux$879_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$879_Y [0]
+      New connections: $procmux$879_Y [31:1] = { 24'000000000000000000000000 $procmux$879_Y [0] $procmux$879_Y [0] $procmux$879_Y [0] $procmux$879_Y [0] $procmux$879_Y [0] $procmux$879_Y [0] $procmux$879_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$852:
+      Old ports: A=0, B=65280, Y=$procmux$852_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$852_Y [8]
+      New connections: { $procmux$852_Y [31:9] $procmux$852_Y [7:0] } = { 16'0000000000000000 $procmux$852_Y [8] $procmux$852_Y [8] $procmux$852_Y [8] $procmux$852_Y [8] $procmux$852_Y [8] $procmux$852_Y [8] $procmux$852_Y [8] 8'00000000 }
+    Consolidated identical input bits for $mux cell $procmux$825:
+      Old ports: A=0, B=16711680, Y=$procmux$825_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$825_Y [16]
+      New connections: { $procmux$825_Y [31:17] $procmux$825_Y [15:0] } = { 8'00000000 $procmux$825_Y [16] $procmux$825_Y [16] $procmux$825_Y [16] $procmux$825_Y [16] $procmux$825_Y [16] $procmux$825_Y [16] $procmux$825_Y [16] 16'0000000000000000 }
+    Consolidated identical input bits for $mux cell $procmux$798:
+      Old ports: A=0, B=32'11111111000000000000000000000000, Y=$procmux$798_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$798_Y [24]
+      New connections: { $procmux$798_Y [31:25] $procmux$798_Y [23:0] } = { $procmux$798_Y [24] $procmux$798_Y [24] $procmux$798_Y [24] $procmux$798_Y [24] $procmux$798_Y [24] $procmux$798_Y [24] $procmux$798_Y [24] 24'000000000000000000000000 }
+  Optimizing cells in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+    Consolidated identical input bits for $mux cell $procmux$965:
+      Old ports: A=0, B=$3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$736, Y=$procmux$965_Y
+      New ports: A=1'0, B=$procmux$879_Y [0], Y=$procmux$965_Y [0]
+      New connections: $procmux$965_Y [31:1] = { 24'000000000000000000000000 $procmux$965_Y [0] $procmux$965_Y [0] $procmux$965_Y [0] $procmux$965_Y [0] $procmux$965_Y [0] $procmux$965_Y [0] $procmux$965_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$947:
+      Old ports: A=0, B=$3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$739, Y=$procmux$947_Y
+      New ports: A=1'0, B=$procmux$852_Y [8], Y=$procmux$947_Y [8]
+      New connections: { $procmux$947_Y [31:9] $procmux$947_Y [7:0] } = { 16'0000000000000000 $procmux$947_Y [8] $procmux$947_Y [8] $procmux$947_Y [8] $procmux$947_Y [8] $procmux$947_Y [8] $procmux$947_Y [8] $procmux$947_Y [8] 8'00000000 }
+    Consolidated identical input bits for $mux cell $procmux$929:
+      Old ports: A=0, B=$3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$742, Y=$procmux$929_Y
+      New ports: A=1'0, B=$procmux$825_Y [16], Y=$procmux$929_Y [16]
+      New connections: { $procmux$929_Y [31:17] $procmux$929_Y [15:0] } = { 8'00000000 $procmux$929_Y [16] $procmux$929_Y [16] $procmux$929_Y [16] $procmux$929_Y [16] $procmux$929_Y [16] $procmux$929_Y [16] $procmux$929_Y [16] 16'0000000000000000 }
+    Consolidated identical input bits for $mux cell $procmux$911:
+      Old ports: A=0, B=$3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$745, Y=$procmux$911_Y
+      New ports: A=1'0, B=$procmux$798_Y [24], Y=$procmux$911_Y [24]
+      New connections: { $procmux$911_Y [31:25] $procmux$911_Y [23:0] } = { $procmux$911_Y [24] $procmux$911_Y [24] $procmux$911_Y [24] $procmux$911_Y [24] $procmux$911_Y [24] $procmux$911_Y [24] $procmux$911_Y [24] 24'000000000000000000000000 }
+  Optimizing cells in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+    Consolidated identical input bits for $mux cell $procmux$1016:
+      Old ports: A=0, B=$2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$727, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694
+      New ports: A=1'0, B=$procmux$947_Y [8], Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8]
+      New connections: { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [31:9] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [7:0] } = { 16'0000000000000000 $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694 [8] 8'00000000 }
+    Consolidated identical input bits for $mux cell $procmux$1007:
+      Old ports: A=0, B=$2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$730, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697
+      New ports: A=1'0, B=$procmux$929_Y [16], Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16]
+      New connections: { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [31:17] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [15:0] } = { 8'00000000 $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697 [16] 16'0000000000000000 }
+    Consolidated identical input bits for $mux cell $procmux$998:
+      Old ports: A=0, B=$2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$733, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700
+      New ports: A=1'0, B=$procmux$911_Y [24], Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24]
+      New connections: { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [31:25] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [23:0] } = { $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_EN[31:0]$700 [24] 24'000000000000000000000000 }
+    Consolidated identical input bits for $mux cell $procmux$1025:
+      Old ports: A=0, B=$2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$724, Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691
+      New ports: A=1'0, B=$procmux$965_Y [0], Y=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0]
+      New connections: $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [31:1] = { 24'000000000000000000000000 $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0] $0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691 [0] }
+  Optimizing cells in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+  Optimizing cells in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+Performed a total of 16 changes.
+
+4.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fvip_top'.
+Computing hashes of 2 cells of `\fvip_top'.
+Finding duplicate cells in `\fvip_top'.
+Finding identical cells in module `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 118 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 115 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 281 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 241 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 227 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+<suppressed ~162 debug messages>
+Removed a total of 57 cells.
+
+4.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fvip_top..
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Removed 0 unused cells and 130 unused wires.
+<suppressed ~2 debug messages>
+
+4.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fvip_top.
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+
+4.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fvip_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~167 debug messages>
+
+4.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fvip_top.
+  Optimizing cells in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+  Optimizing cells in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+Performed a total of 0 changes.
+
+4.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fvip_top'.
+Computing hashes of 2 cells of `\fvip_top'.
+Finding duplicate cells in `\fvip_top'.
+Finding identical cells in module `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 115 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding identical cells in module `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 227 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Removed a total of 0 cells.
+
+4.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fvip_top..
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+
+4.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fvip_top.
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+
+4.7.14. Finished fast OPT passes. (There is nothing left to do.)
+
+4.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 30 address bits (of 32) from memory init port $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$proc_memwr.cc:45:proc_memwr$1367 (regs).
+Removed top 30 address bits (of 32) from memory init port $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$proc_memwr.cc:45:proc_memwr$1368 (regs).
+Removed top 30 address bits (of 32) from memory init port $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$proc_memwr.cc:45:proc_memwr$1369 (regs).
+Removed top 30 address bits (of 32) from memory init port $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$proc_memwr.cc:45:proc_memwr$1370 (regs).
+Removed top 8 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$730.
+Removed top 16 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$727.
+Removed top 24 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$2$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$724.
+Removed top 8 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$697.
+Removed top 16 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$694.
+Removed top 24 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$691.
+Removed top 8 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_EN[31:0]$742.
+Removed top 16 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_EN[31:0]$739.
+Removed top 24 bits (of 32) from wire $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$3$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_EN[31:0]$736.
+Removed top 3 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$add$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:323$552 ($add).
+Removed top 3 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$add$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:324$554 ($add).
+Removed top 3 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$add$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:326$558 ($add).
+Removed top 3 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$add$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:341$573 ($add).
+Removed top 3 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$add$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:352$582 ($add).
+Removed top 2 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$ge$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:485$620 ($ge).
+Removed top 2 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$ge$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:490$624 ($ge).
+Removed top 3 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$ge$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495$628 ($ge).
+Removed top 3 bits (of 4) from port B of cell $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$ge$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495$629 ($ge).
+
+4.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fvip_top..
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~1 debug messages>
+
+4.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.11. Executing OPT pass (performing simple optimizations).
+
+4.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fvip_top.
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+
+4.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fvip_top'.
+Computing hashes of 2 cells of `\fvip_top'.
+Finding duplicate cells in `\fvip_top'.
+Finding identical cells in module `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 107 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding identical cells in module `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 227 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Removed a total of 0 cells.
+
+4.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fvip_top..
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+
+4.11.4. Finished fast OPT passes.
+
+4.12. Executing SORT pass.
+
+4.13. Printing statistics.
+
+=== $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      120 wires
+     1057 wire bits
+       28 public wires
+      145 public wire bits
+       21 ports
+       98 port bits
+      107 cells
+       15   $dff
+       11   $logic_and
+        8   $logic_not
+        1   $mem_v2
+       72   $mux
+
+=== $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      189 wires
+      488 wire bits
+       27 public wires
+      139 public wire bits
+       21 ports
+       98 port bits
+      227 cells
+        5   $add
+       59   $check
+       43   $dff
+       11   $eq
+        4   $ge
+        3   $gt
+        6   $le
+       31   $logic_and
+       17   $logic_not
+       43   $mux
+        5   $not
+
+=== fvip_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+       98 wire bits
+       21 public wires
+       98 public wire bits
+        1 ports
+        1 port bits
+        2 submodules
+        1   $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+        1   $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      334 fvip_top
+      107 $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+      227 $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+        +----------Count including submodules.
+        | 
+      330 wires
+     1643 wire bits
+       76 public wires
+      382 public wire bits
+       43 ports
+      197 port bits
+        - memories
+        - memory bits
+        - processes
+      334 cells
+        5   $add
+       59   $check
+       58   $dff
+       11   $eq
+        4   $ge
+        3   $gt
+        6   $le
+       42   $logic_and
+       25   $logic_not
+        1   $mem_v2
+      115   $mux
+        5   $not
+        2 submodules
+        1   $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+        1   $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+4.14. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example...
+Checking module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props...
+Checking module fvip_top...
+Warning: Wire fvip_top.\wvalid is used but has no driver.
+Warning: Wire fvip_top.\wstrb [3] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [2] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [1] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [0] is used but has no driver.
+Warning: Wire fvip_top.\wdata [31] is used but has no driver.
+Warning: Wire fvip_top.\wdata [30] is used but has no driver.
+Warning: Wire fvip_top.\wdata [29] is used but has no driver.
+Warning: Wire fvip_top.\wdata [28] is used but has no driver.
+Warning: Wire fvip_top.\wdata [27] is used but has no driver.
+Warning: Wire fvip_top.\wdata [26] is used but has no driver.
+Warning: Wire fvip_top.\wdata [25] is used but has no driver.
+Warning: Wire fvip_top.\wdata [24] is used but has no driver.
+Warning: Wire fvip_top.\wdata [23] is used but has no driver.
+Warning: Wire fvip_top.\wdata [22] is used but has no driver.
+Warning: Wire fvip_top.\wdata [21] is used but has no driver.
+Warning: Wire fvip_top.\wdata [20] is used but has no driver.
+Warning: Wire fvip_top.\wdata [19] is used but has no driver.
+Warning: Wire fvip_top.\wdata [18] is used but has no driver.
+Warning: Wire fvip_top.\wdata [17] is used but has no driver.
+Warning: Wire fvip_top.\wdata [16] is used but has no driver.
+Warning: Wire fvip_top.\wdata [15] is used but has no driver.
+Warning: Wire fvip_top.\wdata [14] is used but has no driver.
+Warning: Wire fvip_top.\wdata [13] is used but has no driver.
+Warning: Wire fvip_top.\wdata [12] is used but has no driver.
+Warning: Wire fvip_top.\wdata [11] is used but has no driver.
+Warning: Wire fvip_top.\wdata [10] is used but has no driver.
+Warning: Wire fvip_top.\wdata [9] is used but has no driver.
+Warning: Wire fvip_top.\wdata [8] is used but has no driver.
+Warning: Wire fvip_top.\wdata [7] is used but has no driver.
+Warning: Wire fvip_top.\wdata [6] is used but has no driver.
+Warning: Wire fvip_top.\wdata [5] is used but has no driver.
+Warning: Wire fvip_top.\wdata [4] is used but has no driver.
+Warning: Wire fvip_top.\wdata [3] is used but has no driver.
+Warning: Wire fvip_top.\wdata [2] is used but has no driver.
+Warning: Wire fvip_top.\wdata [1] is used but has no driver.
+Warning: Wire fvip_top.\wdata [0] is used but has no driver.
+Warning: Wire fvip_top.\rready is used but has no driver.
+Warning: Wire fvip_top.\bready is used but has no driver.
+Warning: Wire fvip_top.\awvalid is used but has no driver.
+Warning: Wire fvip_top.\awprot [2] is used but has no driver.
+Warning: Wire fvip_top.\awprot [1] is used but has no driver.
+Warning: Wire fvip_top.\awprot [0] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [3] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [2] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [1] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [0] is used but has no driver.
+Warning: Wire fvip_top.\arvalid is used but has no driver.
+Warning: Wire fvip_top.\arprot [2] is used but has no driver.
+Warning: Wire fvip_top.\arprot [1] is used but has no driver.
+Warning: Wire fvip_top.\arprot [0] is used but has no driver.
+Warning: Wire fvip_top.\aresetn is used but has no driver.
+Warning: Wire fvip_top.\araddr [3] is used but has no driver.
+Warning: Wire fvip_top.\araddr [2] is used but has no driver.
+Warning: Wire fvip_top.\araddr [1] is used but has no driver.
+Warning: Wire fvip_top.\araddr [0] is used but has no driver.
+Found and reported 56 problems.
+
+5. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+5.1. Executing PEEPOPT pass (run peephole optimizers).
+Modifying write port 0 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=2'00, D=0
+Modifying write port 1 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=2'01, D=0
+Modifying write port 2 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=2'10, D=0
+Modifying write port 3 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=2'11, D=0
+Modifying write port 4 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_ADDR[1:0]$689, D=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$666_DATA[31:0]$690
+Modifying write port 5 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_ADDR[1:0]$692, D=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$667_DATA[31:0]$693
+Modifying write port 6 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_ADDR[1:0]$695, D=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$668_DATA[31:0]$696
+Modifying write port 7 on memory $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.regs: CLK=\S_AXI_ACLK, A=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_ADDR[1:0]$698, D=$0$memwr$\regs$/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv:70$669_DATA[31:0]$699
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1292 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_RDATA[31:0], Q=\S_AXI_RDATA
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1293 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_RRESP[1:0], Q=\S_AXI_RRESP
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1294 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_RVALID[0:0], Q=\S_AXI_RVALID
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1295 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_ARREADY[0:0], Q=\S_AXI_ARREADY
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1296 ($dff): CLK=\S_AXI_ACLK, D=$0\ar_pending[0:0], Q=\ar_pending
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1297 ($dff): CLK=\S_AXI_ACLK, D=$0\ar_addr_latch[3:0], Q=\ar_addr_latch
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1299 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_BRESP[1:0], Q=\S_AXI_BRESP
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1300 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_BVALID[0:0], Q=\S_AXI_BVALID
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1317 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_WREADY[0:0], Q=\S_AXI_WREADY
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1318 ($dff): CLK=\S_AXI_ACLK, D=$0\w_pending[0:0], Q=\w_pending
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1319 ($dff): CLK=\S_AXI_ACLK, D=$0\w_data_latch[31:0], Q=\w_data_latch
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1320 ($dff): CLK=\S_AXI_ACLK, D=$0\w_strb_latch[3:0], Q=\w_strb_latch
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1321 ($dff): CLK=\S_AXI_ACLK, D=$0\S_AXI_AWREADY[0:0], Q=\S_AXI_AWREADY
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1322 ($dff): CLK=\S_AXI_ACLK, D=$0\aw_pending[0:0], Q=\aw_pending
+Replacing $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$procdff$1323 ($dff): CLK=\S_AXI_ACLK, D=$0\aw_addr_latch[3:0], Q=\aw_addr_latch
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1324 ($dff): CLK=\clk, D=$0$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505$416$0[0:0]$639, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566$417$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1325 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:504$415$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1326 ($dff): CLK=\clk, D=$0$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505$416$0[0:0]$639, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505$416$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1327 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:449$414$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1328 ($dff): CLK=\clk, D=$0\f_aw_cnt[7:0], Q=\f_aw_cnt
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1329 ($dff): CLK=\clk, D=$0\f_w_cnt[7:0], Q=\f_w_cnt
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1330 ($dff): CLK=\clk, D=$0\f_b_cnt[7:0], Q=\f_b_cnt
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1331 ($dff): CLK=\clk, D=$0\f_ar_cnt[7:0], Q=\f_ar_cnt
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1332 ($dff): CLK=\clk, D=$0\f_r_cnt[7:0], Q=\f_r_cnt
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1333 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:277$410$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1334 ($dff): CLK=\clk, D=\awready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278$411$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1335 ($dff): CLK=\clk, D=\wready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279$412$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1336 ($dff): CLK=\clk, D=\arready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280$413$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1337 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:218$405$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1338 ($dff): CLK=\clk, D=\rvalid, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:219$406$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1339 ($dff): CLK=\clk, D=\rready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:219$407$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1340 ($dff): CLK=\clk, D=\rdata, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:221$408$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1341 ($dff): CLK=\clk, D=\rresp, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:222$409$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1342 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:209$401$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1343 ($dff): CLK=\clk, D=\bvalid, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:210$402$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1344 ($dff): CLK=\clk, D=\bready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:210$403$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1345 ($dff): CLK=\clk, D=\bresp, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:212$404$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1346 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:182$400$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1347 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:151$395$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1348 ($dff): CLK=\clk, D=\arvalid, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:152$396$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1349 ($dff): CLK=\clk, D=\arready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:152$397$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1350 ($dff): CLK=\clk, D=\araddr, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:154$398$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1351 ($dff): CLK=\clk, D=\arprot, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:155$399$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1352 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:141$390$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1353 ($dff): CLK=\clk, D=\wvalid, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:142$391$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1354 ($dff): CLK=\clk, D=\wready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:142$392$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1355 ($dff): CLK=\clk, D=\wdata, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:144$393$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1356 ($dff): CLK=\clk, D=\wstrb, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:145$394$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1357 ($dff): CLK=\clk, D=\aresetn, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:131$385$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1358 ($dff): CLK=\clk, D=\awvalid, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:132$386$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1359 ($dff): CLK=\clk, D=\awready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:132$387$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1360 ($dff): CLK=\clk, D=\awaddr, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:134$388$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1361 ($dff): CLK=\clk, D=\awprot, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:135$389$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1362 ($dff): CLK=\clk, D=\awvalid, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:108$381$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1363 ($dff): CLK=\clk, D=\awready, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:108$382$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1364 ($dff): CLK=\clk, D=\awaddr, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:110$383$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1365 ($dff): CLK=\clk, D=\awprot, Q=$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:111$384$0
+Replacing $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.$procdff$1366 ($dff): CLK=\clk, D=1'1, Q=\f_past_valid
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `fvip_top'. Setting top module to fvip_top.
+
+6.1. Analyzing design hierarchy..
+Top module:  \fvip_top
+Used module:     $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+Used module:     $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+6.2. Analyzing design hierarchy..
+Top module:  \fvip_top
+Used module:     $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+Used module:     $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+Removed 0 unused modules.
+Module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props directly or indirectly contains formal properties -> setting "keep" attribute.
+Module fvip_top directly or indirectly contains formal properties -> setting "keep" attribute.
+
+7. Executing jny backend.
+
+8. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+Warnings: 56 unique messages, 112 total
+End of script. Logfile hash: c7be3dd930, time: 0.15s, user: 0.11s, system: 0.04s, MEM: 20.62 MB peak
+Yosys 0.64+187 (git sha1 49b4f6d81, clang++ 18.1.8 -fPIC -O3)
+Time spent: 18% 6x read_verilog (0 sec), 11% 5x opt_clean (0 sec), ...

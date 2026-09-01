@@ -1,0 +1,710 @@
+===============================================================================
+Module : uvm_pkg
+===============================================================================
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 33.33 --     --     --     --      33.33 
+
+Source File(s) : 
+
+/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/uvm_pkg.sv
+
+Module self-instances :
+
+SCORE LINE TOGGLE FSM BRANCH ASSERT NAME 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : uvm_pkg
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       3     1         33.33   1                 33.33   
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            3     1         33.33   1                 33.33   
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                                                  Attempts Real Successes Failures Incomplete 
+\uvm_component_name_check_visitor::visit .unnamed$$_0 484      484            0        0          
+\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1        0        0              0        0          
+\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1       0        0              0        0          
+
+
+===============================================================================
+Module : axi4lite_if
+===============================================================================
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 95.92 --      91.84 --     --     100.00 
+
+Source File(s) : 
+
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../axi4lite_agent/axi4lite_if.sv
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME          
+ 95.92 --      91.84 --     --     100.00 tb_top.axi_if 
+
+
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : axi4lite_if
+                Total Covered Percent 
+Totals          21    17      80.95   
+Total Bits      196   180     91.84   
+Total Bits 0->1 98    90      91.84   
+Total Bits 1->0 98    90      91.84   
+
+                          
+Ports          1 1 100.00 
+Port Bits      2 2 100.00 
+Port Bits 0->1 1 1 100.00 
+Port Bits 1->0 1 1 100.00 
+
+                                
+Signals          20  16  80.00  
+Signal Bits      194 178 91.75  
+Signal Bits 0->1 97  89  91.75  
+Signal Bits 1->0 97  89  91.75  
+
+Port Details
+     Toggle Toggle 1->0 Toggle 0->1 Direction 
+aclk Yes    Yes         Yes         INPUT     
+
+Signal Details
+            Toggle Toggle 1->0 Toggle 0->1 
+aresetn     Yes    Yes         Yes         
+awaddr[1:0] No     No          No          
+awaddr[3:2] Yes    Yes         Yes         
+awprot[2:0] Yes    Yes         Yes         
+awvalid     Yes    Yes         Yes         
+awready     Yes    Yes         Yes         
+wdata[31:0] Yes    Yes         Yes         
+wstrb[3:0]  Yes    Yes         Yes         
+wvalid      Yes    Yes         Yes         
+wready      Yes    Yes         Yes         
+bresp[1:0]  No     No          No          
+bvalid      Yes    Yes         Yes         
+bready      Yes    Yes         Yes         
+araddr[1:0] No     No          No          
+araddr[3:2] Yes    Yes         Yes         
+arprot[2:0] Yes    Yes         Yes         
+arvalid     Yes    Yes         Yes         
+arready     Yes    Yes         Yes         
+rdata[31:0] Yes    Yes         Yes         
+rresp[1:0]  No     No          No          
+rvalid      Yes    Yes         Yes         
+rready      Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : axi4lite_if
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       8     8         100.00  8                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            8     8         100.00  8                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name Attempts Real Successes Failures Incomplete 
+a1   5149     230            0        0          
+a2   5149     485            0        0          
+a3   5149     485            0        0          
+a4   5149     405            0        0          
+a5   5149     485            0        0          
+a6   5149     405            0        0          
+a7   5149     492            0        0          
+a8   5149     419            0        0          
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb_top.axi_if
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 95.92 --      91.84 --     --     100.00 
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 95.92 --      91.84 --     --     100.00 
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME        
+ 95.92 --      91.84 --     --     100.00 axi4lite_if 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME   
+--     --     --     --     --     --     tb_top 
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : axi4lite_slave_example
+===============================================================================
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 97.24 100.00  91.72 --     100.00 --     
+
+Source File(s) : 
+
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../rtl/axi4lite_slave_example.sv
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME       
+ 97.24 100.00  91.72 --     100.00 --     tb_top.dut 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : axi4lite_slave_example
+
+             Line No.   Total   Covered  Percent
+TOTAL                       58       58   100.00
+ALWAYS             56       11       11   100.00
+ALWAYS             74       13       13   100.00
+ALWAYS             94       13       13   100.00
+ALWAYS            119       11       11   100.00
+ALWAYS            137       10       10   100.00
+
+55                          always @(posedge S_AXI_ACLK) begin
+56         1/1                  if (!S_AXI_ARESETN) begin
+57         1/1                      S_AXI_AWREADY <= 1'b0;
+58         1/1                      aw_pending    <= 1'b0;
+59         1/1                      aw_addr_latch <= {C_AXI_ADDR_WIDTH{1'b0}};
+60                              end else begin
+61         1/1                      if (S_AXI_AWVALID && !S_AXI_AWREADY && !aw_pending) begin
+62         1/1                          S_AXI_AWREADY <= 1'b1;
+63         1/1                          aw_addr_latch <= S_AXI_AWADDR;
+64         1/1                          aw_pending    <= 1'b1;
+65                                  end else begin
+66         1/1                          S_AXI_AWREADY <= 1'b0;
+67                                  end
+68         1/1                      if (S_AXI_BVALID && S_AXI_BREADY)
+69         1/1                          aw_pending <= 1'b0;
+                        MISSING_ELSE
+70                              end
+71                          end
+72                      
+73                          always @(posedge S_AXI_ACLK) begin
+74         1/1                  if (!S_AXI_ARESETN) begin
+75         1/1                      S_AXI_WREADY <= 1'b0;
+76         1/1                      w_pending    <= 1'b0;
+77         1/1                      w_data_latch <= {C_AXI_DATA_WIDTH{1'b0}};
+78         1/1                      w_strb_latch <= {(C_AXI_DATA_WIDTH/8){1'b0}};
+79                              end else begin
+80         1/1                      if (S_AXI_WVALID && !S_AXI_WREADY && !w_pending) begin
+81         1/1                          S_AXI_WREADY <= 1'b1;
+82         1/1                          w_data_latch <= S_AXI_WDATA;
+83         1/1                          w_strb_latch <= S_AXI_WSTRB;
+84         1/1                          w_pending    <= 1'b1;
+85                                  end else begin
+86         1/1                          S_AXI_WREADY <= 1'b0;
+87                                  end
+88         1/1                      if (S_AXI_BVALID && S_AXI_BREADY)
+89         1/1                          w_pending <= 1'b0;
+                        MISSING_ELSE
+90                              end
+91                          end
+92                      
+93                          always @(posedge S_AXI_ACLK) begin
+94         1/1                  if (!S_AXI_ARESETN) begin
+95         1/1                      S_AXI_BVALID <= 1'b0;
+96         1/1                      S_AXI_BRESP  <= 2'b00;
+97         1/1                      for (i = 0; i < NUM_REGS; i = i + 1)
+98         1/1                          regs[i] <= {C_AXI_DATA_WIDTH{1'b0}};
+99                              end else begin
+100        1/1                      if (S_AXI_BVALID && S_AXI_BREADY)
+101        1/1                          S_AXI_BVALID <= 1'b0;
+                        MISSING_ELSE
+102                     
+103        1/1                      if (aw_pending && w_pending && !S_AXI_BVALID) begin
+104        1/1                          S_AXI_BVALID <= 1'b1;
+105        1/1                          S_AXI_BRESP  <= 2'b00;
+106        1/1                          for (i = 0; i < C_AXI_DATA_WIDTH/8; i = i + 1) begin
+107        1/1                              if (w_strb_latch[i])
+108        1/1                                  regs[aw_addr_latch[ADDR_LSB +: REG_BITS]][i*8 +: 8]
+                        MISSING_ELSE
+109                                                 <= w_data_latch[i*8 +: 8];
+110                                     end
+111                                 end
+                        MISSING_ELSE
+112                             end
+113                         end
+114                     
+115                         reg                                 ar_pending;
+116                         reg [C_AXI_ADDR_WIDTH-1:0]          ar_addr_latch;
+117                     
+118                         always @(posedge S_AXI_ACLK) begin
+119        1/1                  if (!S_AXI_ARESETN) begin
+120        1/1                      S_AXI_ARREADY <= 1'b0;
+121        1/1                      ar_pending    <= 1'b0;
+122        1/1                      ar_addr_latch <= {C_AXI_ADDR_WIDTH{1'b0}};
+123                             end else begin
+124        1/1                      if (S_AXI_ARVALID && !S_AXI_ARREADY && !ar_pending) begin
+125        1/1                          S_AXI_ARREADY <= 1'b1;
+126        1/1                          ar_addr_latch <= S_AXI_ARADDR;
+127        1/1                          ar_pending    <= 1'b1;
+128                                 end else begin
+129        1/1                          S_AXI_ARREADY <= 1'b0;
+130                                 end
+131        1/1                      if (S_AXI_RVALID && S_AXI_RREADY)
+132        1/1                          ar_pending <= 1'b0;
+                        MISSING_ELSE
+133                             end
+134                         end
+135                     
+136                         always @(posedge S_AXI_ACLK) begin
+137        1/1                  if (!S_AXI_ARESETN) begin
+138        1/1                      S_AXI_RVALID <= 1'b0;
+139        1/1                      S_AXI_RDATA  <= {C_AXI_DATA_WIDTH{1'b0}};
+140        1/1                      S_AXI_RRESP  <= 2'b00;
+141                             end else begin
+142        1/1                      if (S_AXI_RVALID && S_AXI_RREADY)
+143        1/1                          S_AXI_RVALID <= 1'b0;
+                        MISSING_ELSE
+144                     
+145        1/1                      if (ar_pending && !S_AXI_RVALID) begin
+146        1/1                          S_AXI_RVALID <= 1'b1;
+147        1/1                          S_AXI_RDATA  <= regs[ar_addr_latch[ADDR_LSB +: REG_BITS]];
+148        1/1                          S_AXI_RRESP  <= 2'b00;
+149                                 end
+                        MISSING_ELSE
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : axi4lite_slave_example
+                Total Covered Percent 
+Totals          28    22      78.57   
+Total Bits      290   266     91.72   
+Total Bits 0->1 145   133     91.72   
+Total Bits 1->0 145   133     91.72   
+
+                              
+Ports          21  17  80.95  
+Port Bits      196 180 91.84  
+Port Bits 0->1 98  90  91.84  
+Port Bits 1->0 98  90  91.84  
+
+                              
+Signals          7  5  71.43  
+Signal Bits      94 86 91.49  
+Signal Bits 0->1 47 43 91.49  
+Signal Bits 1->0 47 43 91.49  
+
+Port Details
+                  Toggle Toggle 1->0 Toggle 0->1 Direction 
+S_AXI_ACLK        Yes    Yes         Yes         INPUT     
+S_AXI_ARESETN     Yes    Yes         Yes         INPUT     
+S_AXI_AWADDR[1:0] No     No          No          INPUT     
+S_AXI_AWADDR[3:2] Yes    Yes         Yes         INPUT     
+S_AXI_AWPROT[2:0] Yes    Yes         Yes         INPUT     
+S_AXI_AWVALID     Yes    Yes         Yes         INPUT     
+S_AXI_AWREADY     Yes    Yes         Yes         OUTPUT    
+S_AXI_WDATA[31:0] Yes    Yes         Yes         INPUT     
+S_AXI_WSTRB[3:0]  Yes    Yes         Yes         INPUT     
+S_AXI_WVALID      Yes    Yes         Yes         INPUT     
+S_AXI_WREADY      Yes    Yes         Yes         OUTPUT    
+S_AXI_BRESP[1:0]  No     No          No          OUTPUT    
+S_AXI_BVALID      Yes    Yes         Yes         OUTPUT    
+S_AXI_BREADY      Yes    Yes         Yes         INPUT     
+S_AXI_ARADDR[1:0] No     No          No          INPUT     
+S_AXI_ARADDR[3:2] Yes    Yes         Yes         INPUT     
+S_AXI_ARPROT[2:0] Yes    Yes         Yes         INPUT     
+S_AXI_ARVALID     Yes    Yes         Yes         INPUT     
+S_AXI_ARREADY     Yes    Yes         Yes         OUTPUT    
+S_AXI_RDATA[31:0] Yes    Yes         Yes         OUTPUT    
+S_AXI_RRESP[1:0]  No     No          No          OUTPUT    
+S_AXI_RVALID      Yes    Yes         Yes         OUTPUT    
+S_AXI_RREADY      Yes    Yes         Yes         INPUT     
+
+Signal Details
+                   Toggle Toggle 1->0 Toggle 0->1 
+aw_pending         Yes    Yes         Yes         
+aw_addr_latch[1:0] No     No          No          
+aw_addr_latch[3:2] Yes    Yes         Yes         
+w_pending          Yes    Yes         Yes         
+w_data_latch[31:0] Yes    Yes         Yes         
+w_strb_latch[3:0]  Yes    Yes         Yes         
+ar_pending         Yes    Yes         Yes         
+ar_addr_latch[1:0] No     No          No          
+ar_addr_latch[3:2] Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+Branch Coverage for Module : axi4lite_slave_example
+         Line No. Total Covered Percent 
+Branches          25    25      100.00  
+IF       56       5     5       100.00  
+IF       74       5     5       100.00  
+IF       94       5     5       100.00  
+IF       119      5     5       100.00  
+IF       137      5     5       100.00  
+
+
+56                 if (!S_AXI_ARESETN) begin
+                   -1-  
+57                     S_AXI_AWREADY <= 1'b0;
+                       ==>
+58                     aw_pending    <= 1'b0;
+59                     aw_addr_latch <= {C_AXI_ADDR_WIDTH{1'b0}};
+60                 end else begin
+61                     if (S_AXI_AWVALID && !S_AXI_AWREADY && !aw_pending) begin
+                       -2-  
+62                         S_AXI_AWREADY <= 1'b1;
+                           ==>
+63                         aw_addr_latch <= S_AXI_AWADDR;
+64                         aw_pending    <= 1'b1;
+65                     end else begin
+66                         S_AXI_AWREADY <= 1'b0;
+                           ==>
+67                     end
+68                     if (S_AXI_BVALID && S_AXI_BREADY)
+                       -3-  
+69                         aw_pending <= 1'b0;
+                           ==>
+                           MISSING_ELSE
+                           ==>
+
+Branches:
+
+-1- -2- -3- Status  
+1   -   -   Covered 
+0   1   -   Covered 
+0   0   -   Covered 
+0   -   1   Covered 
+0   -   0   Covered 
+
+
+74                 if (!S_AXI_ARESETN) begin
+                   -1-  
+75                     S_AXI_WREADY <= 1'b0;
+                       ==>
+76                     w_pending    <= 1'b0;
+77                     w_data_latch <= {C_AXI_DATA_WIDTH{1'b0}};
+78                     w_strb_latch <= {(C_AXI_DATA_WIDTH/8){1'b0}};
+79                 end else begin
+80                     if (S_AXI_WVALID && !S_AXI_WREADY && !w_pending) begin
+                       -2-  
+81                         S_AXI_WREADY <= 1'b1;
+                           ==>
+82                         w_data_latch <= S_AXI_WDATA;
+83                         w_strb_latch <= S_AXI_WSTRB;
+84                         w_pending    <= 1'b1;
+85                     end else begin
+86                         S_AXI_WREADY <= 1'b0;
+                           ==>
+87                     end
+88                     if (S_AXI_BVALID && S_AXI_BREADY)
+                       -3-  
+89                         w_pending <= 1'b0;
+                           ==>
+                           MISSING_ELSE
+                           ==>
+
+Branches:
+
+-1- -2- -3- Status  
+1   -   -   Covered 
+0   1   -   Covered 
+0   0   -   Covered 
+0   -   1   Covered 
+0   -   0   Covered 
+
+
+94                 if (!S_AXI_ARESETN) begin
+                   -1-  
+95                     S_AXI_BVALID <= 1'b0;
+                       ==>
+96                     S_AXI_BRESP  <= 2'b00;
+97                     for (i = 0; i < NUM_REGS; i = i + 1)
+98                         regs[i] <= {C_AXI_DATA_WIDTH{1'b0}};
+99                 end else begin
+100                    if (S_AXI_BVALID && S_AXI_BREADY)
+                       -2-  
+101                        S_AXI_BVALID <= 1'b0;
+                           ==>
+                           MISSING_ELSE
+                           ==>
+102        
+103                    if (aw_pending && w_pending && !S_AXI_BVALID) begin
+                       -3-  
+104                        S_AXI_BVALID <= 1'b1;
+                           ==>
+105                        S_AXI_BRESP  <= 2'b00;
+106                        for (i = 0; i < C_AXI_DATA_WIDTH/8; i = i + 1) begin
+107                            if (w_strb_latch[i])
+108                                regs[aw_addr_latch[ADDR_LSB +: REG_BITS]][i*8 +: 8]
+109                                    <= w_data_latch[i*8 +: 8];
+110                        end
+111                    end
+                       MISSING_ELSE
+                       ==>
+
+Branches:
+
+-1- -2- -3- Status  
+1   -   -   Covered 
+0   1   -   Covered 
+0   0   -   Covered 
+0   -   1   Covered 
+0   -   0   Covered 
+
+
+119                if (!S_AXI_ARESETN) begin
+                   -1-  
+120                    S_AXI_ARREADY <= 1'b0;
+                       ==>
+121                    ar_pending    <= 1'b0;
+122                    ar_addr_latch <= {C_AXI_ADDR_WIDTH{1'b0}};
+123                end else begin
+124                    if (S_AXI_ARVALID && !S_AXI_ARREADY && !ar_pending) begin
+                       -2-  
+125                        S_AXI_ARREADY <= 1'b1;
+                           ==>
+126                        ar_addr_latch <= S_AXI_ARADDR;
+127                        ar_pending    <= 1'b1;
+128                    end else begin
+129                        S_AXI_ARREADY <= 1'b0;
+                           ==>
+130                    end
+131                    if (S_AXI_RVALID && S_AXI_RREADY)
+                       -3-  
+132                        ar_pending <= 1'b0;
+                           ==>
+                           MISSING_ELSE
+                           ==>
+
+Branches:
+
+-1- -2- -3- Status  
+1   -   -   Covered 
+0   1   -   Covered 
+0   0   -   Covered 
+0   -   1   Covered 
+0   -   0   Covered 
+
+
+137                if (!S_AXI_ARESETN) begin
+                   -1-  
+138                    S_AXI_RVALID <= 1'b0;
+                       ==>
+139                    S_AXI_RDATA  <= {C_AXI_DATA_WIDTH{1'b0}};
+140                    S_AXI_RRESP  <= 2'b00;
+141                end else begin
+142                    if (S_AXI_RVALID && S_AXI_RREADY)
+                       -2-  
+143                        S_AXI_RVALID <= 1'b0;
+                           ==>
+                           MISSING_ELSE
+                           ==>
+144        
+145                    if (ar_pending && !S_AXI_RVALID) begin
+                       -3-  
+146                        S_AXI_RVALID <= 1'b1;
+                           ==>
+147                        S_AXI_RDATA  <= regs[ar_addr_latch[ADDR_LSB +: REG_BITS]];
+148                        S_AXI_RRESP  <= 2'b00;
+149                    end
+                       MISSING_ELSE
+                       ==>
+
+Branches:
+
+-1- -2- -3- Status  
+1   -   -   Covered 
+0   1   -   Covered 
+0   0   -   Covered 
+0   -   1   Covered 
+0   -   0   Covered 
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb_top.dut
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 97.24 100.00  91.72 --     100.00 --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 97.24 100.00  91.72 --     100.00 --     
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME                   
+ 97.24 100.00  91.72 --     100.00 --     axi4lite_slave_example 
+
+
+Parent : 
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME   
+--     --     --     --     --     --     tb_top 
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : axi4lite_test_pkg
+===============================================================================
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+100.00 --     --     --     --     100.00 
+
+Source File(s) : 
+
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../tests/axi4lite_test_pkg.sv
+
+Module self-instances :
+
+SCORE LINE TOGGLE FSM BRANCH ASSERT NAME 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : axi4lite_test_pkg
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       2     2         100.00  2                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            2     2         100.00  2                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                                                     Attempts Real Successes Failures Incomplete 
+\axi4lite_full_coverage_test::run_sequences .unnamed$$_0 1        1              0        0          
+\axi4lite_random_test::run_sequences .unnamed$$_0        1        1              0        0          
+
+
+===============================================================================
+Module : axi4lite_seq_pkg
+===============================================================================
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+100.00 --     --     --     --     100.00 
+
+Source File(s) : 
+
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../seq_lib/axi4lite_seq_pkg.sv
+
+Module self-instances :
+
+SCORE LINE TOGGLE FSM BRANCH ASSERT NAME 
+
+
+
+-------------------------------------------------------------------------------
+Assert Coverage for Module : axi4lite_seq_pkg
+                 Total Attempted Percent Succeeded/Matched Percent 
+Assertions       3     3         100.00  3                 100.00  
+Cover properties 0     0                 0                         
+Cover sequences  0     0                 0                         
+Total            3     3         100.00  3                 100.00  
+
+
+
+-------------------------------------------------------------------------------
+
+Assertion Details
+
+Name                                       Attempts Real Successes Failures Incomplete 
+\axi4lite_base_seq::axi_read .unnamed$$_0  181      181            0        0          
+\axi4lite_base_seq::axi_write .unnamed$$_0 259      259            0        0          
+\axi4lite_random_seq::body .unnamed$$_0    400      400            0        0          
+
+
+===============================================================================
+Module : tb_top
+===============================================================================
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+--     --     --     --     --     --     
+
+Source File(s) : 
+
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../tb/tb_top.sv
+
+Module self-instances :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME   
+--     --     --     --     --     --     tb_top 
+
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb_top
+===============================================================================
+
+Instance :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+--     --     --     --     --     --     
+
+
+Instance's subtree :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT 
+ 97.94 100.00  91.77 --     100.00 100.00 
+
+
+Module : 
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME   
+--     --     --     --     --     --     tb_top 
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT NAME   
+ 95.92 --      91.84 --     --     100.00 axi_if 
+ 97.24 100.00  91.72 --     100.00 --     dut    
+
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.

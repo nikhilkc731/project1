@@ -1,0 +1,21 @@
+Testbench Group List
+
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+100.00 100.00     1      
+
+
+Total groups in report: 10
+-------------------------------------------------------------------------------
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                                   
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_prot         
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_raw          
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_transaction  
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_ordering     
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_delays       
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_read_data    
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_write_data   
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_reset        
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_write_strobe 
+100.00 100.00    1      100    1        1            64           64                    axi4lite_agent_pkg::axi4lite_coverage::cg_handshake    
+

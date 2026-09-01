@@ -1,0 +1,28 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
+engine_0 (smtbmc boolector) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_500_633 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:500.13-500.58 step 5
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_565_653 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:565.13-565.58 step 5
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_563_649 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:563.13-563.36 step 7
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_564_651 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:564.13-564.36 step 7
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_475_611 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:475.13-475.35 step 9
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_480_615 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:480.13-480.35 step 9
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_495_627 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495.13-495.54 step 9
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_505_642 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505.13-505.67 step 9
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_566_657 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566.13-566.67 step 9
+cover trace: engine_0/trace5.vcd
+cover trace: engine_0/trace5.yw
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_490_623 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:490.13-490.35 step 15
+cover trace: engine_0/trace6.vcd
+cover trace: engine_0/trace6.yw
+  reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_485_619 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:485.13-485.35 step 15

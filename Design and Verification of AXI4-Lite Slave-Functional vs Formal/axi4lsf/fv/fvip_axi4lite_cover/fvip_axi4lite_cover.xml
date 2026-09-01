@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-05-25T20:25:39" hostname="nikhil-VirtualBox" package="fvip_axi4lite" id="0" name="cover" tests="46" errors="0" failures="0" time="2" skipped="35">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="cover" name="build execution" time="0">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:475.13-475.35" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:475.13-475.35" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_475_611" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:480.13-480.35" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:480.13-480.35" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_480_615" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:485.13-485.35" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:485.13-485.35" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_485_619" tracefile="engine_0/trace6.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:490.13-490.35" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:490.13-490.35" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_490_623" tracefile="engine_0/trace5.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495.13-495.54" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495.13-495.54" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_495_627" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:500.13-500.58" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:500.13-500.58" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_500_633" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505.13-505.67" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505.13-505.67" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_505_642" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:563.13-563.36" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:563.13-563.36" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_563_649" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:564.13-564.36" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:564.13-564.36" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_564_651" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:565.13-565.58" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:565.13-565.58" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_565_653" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566.13-566.67" time="0" type="COVER" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566.13-566.67" id="_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_566_657" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:183.13-183.36" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:183.13-183.36" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_183_482">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:184.13-184.36" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:184.13-184.36" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_184_484">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:185.13-185.36" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:185.13-185.36" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_185_486">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:186.13-186.37" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:186.13-186.37" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_186_488">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:187.13-187.36" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:187.13-187.36" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_187_490">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:188.13-188.36" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:188.13-188.36" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_188_492">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:189.13-189.37" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:189.13-189.37" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_189_494">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:190.13-190.37" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:190.13-190.37" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_190_496">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:211.17-211.31" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:211.17-211.31" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_211_507">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:212.17-212.46" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:212.17-212.46" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_212_508">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:220.17-220.31" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:220.17-220.31" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_220_520">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:221.17-221.46" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:221.17-221.46" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_221_521">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:222.17-222.46" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:222.17-222.46" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_222_523">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:236.25-236.47" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:236.25-236.47" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_236_527">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:237.25-237.47" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:237.25-237.47" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_237_529">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:257.26-257.41" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:257.26-257.41" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_257_533">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:258.26-258.40" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:258.26-258.40" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_258_534">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:259.26-259.41" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:259.26-259.41" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_259_535">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278.33-278.49" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278.33-278.49" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_278_543">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279.33-279.48" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279.33-279.48" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_279_545">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280.33-280.49" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280.33-280.49" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_280_547">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:333.13-333.40" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:333.13-333.40" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_333_563">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:334.13-334.39" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:334.13-334.39" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_334_565">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:340.13-340.47" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:340.13-340.47" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_340_569">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:341.13-341.47" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:341.13-341.47" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_341_572">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:347.13-347.40" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:347.13-347.40" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_347_577">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:352.13-352.47" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:352.13-352.47" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_352_581">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:373.17-373.43" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:373.17-373.43" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_373_586">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:374.17-374.43" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:374.17-374.43" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_374_588">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:382.17-382.43" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:382.17-382.43" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_382_592">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:450.13-450.29" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:450.13-450.29" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_450_599">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:451.13-451.28" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:451.13-451.28" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_451_601">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:452.13-452.28" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:452.13-452.28" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_452_603">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:453.13-453.29" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:453.13-453.29" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_453_605">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in fvip_top/u_props at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:454.13-454.28" time="0" type="ASSERT" location="/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:454.13-454.28" id="_witness_.assert_assert__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_454_607">
+<skipped />
+</testcase>
+<system-out>SBY 20:25:36 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] Removing directory '/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover'.
+SBY 20:25:36 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] Copy '/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv' to '/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/src/axi4lite_slave_example.sv'.
+SBY 20:25:36 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] Copy '/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv' to '/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/src/fvip_axi4lite_props.sv'.
+SBY 20:25:36 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] Copy '/home/nikhil/projects/axi4lsf/fv/fvip_top.sv' to '/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/src/fvip_top.sv'.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: smtbmc boolector
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: starting process &quot;cd /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\aresetn is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awaddr [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awaddr [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awaddr [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awaddr [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awprot [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awprot [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awprot [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\awvalid is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [31] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [30] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [29] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [28] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [27] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [26] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [25] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [24] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [23] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [22] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [21] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [20] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [19] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [18] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [17] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [16] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [15] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [14] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [13] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [12] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [11] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [10] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [9] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [8] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [7] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [6] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [5] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [4] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wdata [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wstrb [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wstrb [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wstrb [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wstrb [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\wvalid is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\bready is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\araddr [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\araddr [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\araddr [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\araddr [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\arprot [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\arprot [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\arprot [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\arvalid is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: Warning: Wire fvip_top.\rready is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] base: finished (returncode=0)
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: starting process &quot;cd /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wvalid is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wstrb [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wstrb [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wstrb [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wstrb [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [31] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [30] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [29] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [28] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [27] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [26] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [25] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [24] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [23] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [22] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [21] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [20] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [19] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [18] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [17] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [16] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [15] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [14] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [13] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [12] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [11] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [10] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [9] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [8] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [7] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [6] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [5] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [4] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\wdata [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\rready is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\bready is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awvalid is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awprot [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awprot [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awprot [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awaddr [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awaddr [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awaddr [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\awaddr [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\arvalid is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\arprot [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\arprot [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\arprot [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\aresetn is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\araddr [3] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\araddr [2] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\araddr [1] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: Warning: Wire fvip_top.\araddr [0] is used but has no driver.
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] prep: finished (returncode=0)
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] smt2: starting process &quot;cd /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] smt2: finished (returncode=0)
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: starting process &quot;cd /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover; yosys-smtbmc -s boolector --presat --unroll -c --noprogress -t 60  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Solver: boolector
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:500.13-500.58 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_500_633)
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:565.13-565.58 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_565_653)
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Reached cover statement in step 7 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:563.13-563.36 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_563_649)
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Reached cover statement in step 7 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:564.13-564.36 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_564_651)
+SBY 20:25:37 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Reached cover statement in step 9 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:475.13-475.35 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_475_611)
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Reached cover statement in step 9 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:480.13-480.35 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_480_615)
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Reached cover statement in step 9 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495.13-495.54 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_495_627)
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 9..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Reached cover statement in step 9 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505.13-505.67 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_505_642)
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Reached cover statement in step 9 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566.13-566.67 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_566_657)
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 9..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 10..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 11..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 12..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 13..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 14..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 15..
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Reached cover statement in step 15 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:490.13-490.35 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_490_623)
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace5.vcd
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace5.smtc
+SBY 20:25:38 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace5.yw
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Checking cover reachability in step 15..
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Reached cover statement in step 15 at fvip_top.u_props: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:485.13-485.35 (_witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_485_619)
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace6.vcd
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace6.smtc
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace6.yw
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: ##   0:00:02  Status: passed
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: finished (returncode=0)
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] engine_0: Status returned by engine: pass
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: engine_0 (smtbmc boolector) returned pass
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: cover trace: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/engine_0/trace0.vcd
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_500_633 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:500.13-500.58 step 5
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_565_653 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:565.13-565.58 step 5
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: cover trace: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/engine_0/trace1.vcd
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_563_649 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:563.13-563.36 step 7
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: cover trace: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/engine_0/trace2.vcd
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_564_651 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:564.13-564.36 step 7
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: cover trace: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/engine_0/trace3.vcd
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_475_611 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:475.13-475.35 step 9
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_480_615 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:480.13-480.35 step 9
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_495_627 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:495.13-495.54 step 9
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: cover trace: /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/engine_0/trace4.vcd
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_505_642 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505.13-505.67 step 9
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary:   reached cover statement fvip_top.u_props._witness_.cover_cover__home_nikhil_projects_axi4lsf_fv_fvip_axi4lite_props_sv_566_657 at /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566.13-566.67 step 9
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: and 2 further traces
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] summary: see /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/PASS for a complete summary
+SBY 20:25:39 [/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

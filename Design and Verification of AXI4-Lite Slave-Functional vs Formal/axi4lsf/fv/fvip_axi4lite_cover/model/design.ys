@@ -1,0 +1,20 @@
+# running in /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_cover/src/
+read_verilog -sv /home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv
+read_verilog -sv /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv
+read_verilog -sv /home/nikhil/projects/axi4lsf/fv/fvip_top.sv
+prep -top fvip_top
+clk2fflogic
+#flatten
+#opt_clean -purge
+#opt -full
+
+
+
+# ---------------------------------------------------------------------------
+# FILES
+# (paths relative to the directory where sby is invoked)
+# ---------------------------------------------------------------------------
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

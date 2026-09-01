@@ -1,0 +1,1121 @@
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_transaction __coverage_axi4lite_coverage.cg_transaction unused_axi4lite_coverage_cg_transaction_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 93 /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../axi4lite_agent/axi4lite_coverage.sv
+ 20 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_d
+ 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_c
+0
+0
+0
+64
+0
+ 0
+
+3
+0
+2
+0
+ 6 cp_dir 24 0 0 0 0 0 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 1 1 34 axi4lite_agent_pkg::axi4lite_dir_t 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 write 25 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 read 26 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 7 cp_addr 29 0 0 0 0 0 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_2 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 4 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 reg0 30 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg1 31 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg2 32 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg3 33 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_6 0 0 0 0 0 0 0
+ 0
+
+ 7 cp_resp 39 0 0 0 0 0 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_7 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_7 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 2 1 35 axi4lite_agent_pkg::axi4lite_resp_t 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 okay 40 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_8 0 0 0 0 0 0 0
+ 0
+ 1 2 0 0 1 1 6 slverr 41 0 0 2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_9 0 0 0 0 0 0 0
+ 0
+ 1 2 0 0 1 1 6 decerr 42 0 0 2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_a 0 0 0 0 0 0 0
+ 0
+ 1 3 0 0 1 1 6 exokay 43 0 0 3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 146 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_transaction_fn_b 0 0 0 0 0 0 0
+ 0
+
+ 11 cx_dir_addr 0 46 0 0 -1 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 11 cx_dir_resp 0 47 0 0 -1 0 0 0 0 2 0 2 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_write_strobe __coverage_axi4lite_coverage.cg_write_strobe unused_axi4lite_coverage_cg_write_strobe_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 53 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_e
+ 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_d
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+1
+0
+ 7 cp_strb 57 0 0 0 0 0 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 4 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 12 1 1 0 0 1 1 9 all_bytes 58 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 byte0_only 59 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 byte1_only 60 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 byte2_only 61 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 byte3_only 62 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 lower_half 63 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 upper_half 64 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_6 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 11 byte0_byte2 65 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_7 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 11 byte1_byte3 66 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_8 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 11 lower_three 67 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_9 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 11 upper_three 68 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_a 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 12 other_combos 69 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0 0
+
+ 12 cp_strb_addr 72 0 0 0 0 0 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_b 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_b 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 4 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 reg0 73 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_c 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg1 74 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg2 75 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg3 76 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 147 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_strobe_fn_6 0 0 0 0 0 0 0
+ 0
+
+ 12 cx_strb_addr 0 79 0 0 -1 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_write_data __coverage_axi4lite_coverage.cg_write_data unused_axi4lite_coverage_cg_write_data_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 85 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_c
+ 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_b
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 7 cp_data 89 0 0 0 0 0 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 9 1 1 0 0 1 1 4 zero 90 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 all_ones 91 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 walk1_0 92 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 walk1_31 93 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_5a 94 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_a5 95 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 low_nibble 96 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_2 0 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_6 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 mid_range 97 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_7 0 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_8 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 high_range 98 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_9 0 145 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_write_data_fn_a 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_prot __coverage_axi4lite_coverage.cg_prot unused_axi4lite_coverage_cg_prot_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 105 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_c
+ 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_b
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+1
+0
+ 7 cp_prot 109 0 0 0 0 0 137 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn 137 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 3 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 8 1 1 0 0 1 1 18 unpriv_secure_data 110 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 16 priv_secure_data 111 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 18 unpriv_nonsec_data 112 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 16 priv_nonsec_data 113 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 19 unpriv_secure_instr 114 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 17 priv_secure_instr 115 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 19 unpriv_nonsec_instr 116 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_6 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 17 priv_nonsec_instr 117 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_7 0 0 0 0 0 0 0
+ 0
+
+ 11 cp_prot_dir 120 0 0 0 0 0 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_8 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_8 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 1 1 34 axi4lite_agent_pkg::axi4lite_dir_t 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 write 121 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_9 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 read 122 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_prot_fn_a 0 0 0 0 0 0 0
+ 0
+
+ 11 cx_prot_dir 0 125 0 0 -1 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_ordering __coverage_axi4lite_coverage.cg_ordering unused_axi4lite_coverage_cg_ordering_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 131 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_4
+ 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_3
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+1
+0
+ 11 cp_curr_dir 135 0 0 0 0 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 1 1 34 axi4lite_agent_pkg::axi4lite_dir_t 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 write 136 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 read 137 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 11 cp_prev_dir 140 0 0 0 0 0 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_2 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 1 1 34 axi4lite_agent_pkg::axi4lite_dir_t 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 write 141 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 read 142 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 143 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_ordering_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 6 cx_b2b 0 145 0 0 -1 0 0 0 0 2 1 0 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_delays __coverage_axi4lite_coverage.cg_delays unused_axi4lite_coverage_cg_delays_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 151 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_b
+ 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_a
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+2
+0
+ 13 cp_addr_delay 155 0 0 0 0 0 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn 139 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 23 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 zero1 156 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 short_d1 157 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_1 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 medium_d1 158 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_3 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_4 0 0 0 0 0
+ 0
+
+ 13 cp_data_delay 161 0 0 0 0 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_5 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_5 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 23 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 zero2 162 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 short_d2 163 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_1 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 medium_d2 164 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_3 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_4 0 0 0 0 0
+ 0
+
+ 13 cp_resp_delay 167 0 0 0 0 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_6 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_6 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 23 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 zero3 168 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 short_d3 169 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_1 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 medium_d3 170 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_3 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_4 0 0 0 0 0
+ 0
+
+ 6 cp_dir 173 0 0 0 0 0 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_7 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_7 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 7 1 1 34 axi4lite_agent_pkg::axi4lite_dir_t 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 write 174 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_8 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 read 175 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 141 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_delays_fn_9 0 0 0 0 0 0 0
+ 0
+
+ 17 cx_addr_delay_dir 0 178 0 0 -1 0 0 0 0 2 0 3 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 17 cx_resp_delay_dir 0 179 0 0 -1 0 0 0 0 2 2 3 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_raw __coverage_axi4lite_coverage.cg_raw unused_axi4lite_coverage_cg_raw_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 188 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_8
+ 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_7
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+1
+0
+ 6 cp_raw 192 0 0 0 0 0 136 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn 136 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 6 no_raw 193 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 raw 194 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 11 cp_raw_addr 197 0 0 0 0 0 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_2 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 4 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 reg0 198 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg1 199 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg2 200 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 reg3 201 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_6 0 0 0 0 0 0 0
+ 0
+
+ 11 cx_raw_addr 0 204 0 0 -1 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 2 0 0 -1 0 0 1 1 8 no_raw_x 205 0 2 0 1 1 1 0 0 0 1 1 1 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_raw_fn_0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_handshake __coverage_axi4lite_coverage.cg_handshake unused_axi4lite_coverage_cg_handshake_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 218 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_8
+ 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_7
+0
+0
+0
+64
+0
+ 0
+
+6
+0
+0
+0
+ 11 cp_aw_stall 222 0 0 0 0 0 142 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn 142 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 no_stall 223 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 stall 224 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 10 cp_w_stall 227 0 0 0 0 0 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_2 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 no_stall 228 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 stall 229 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 11 cp_ar_stall 232 0 0 0 0 0 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_3 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_3 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 no_stall 233 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 stall 234 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 10 cp_b_stall 237 0 0 0 0 0 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_4 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_4 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 no_stall 238 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 stall 239 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 10 cp_r_stall 242 0 0 0 0 0 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_5 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_5 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 no_stall 243 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 stall 244 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 13 cp_aw_w_simul 247 0 0 0 0 0 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_6 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_6 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 12 simultaneous 248 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 not_simul 249 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_handshake_fn_0 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_reset __coverage_axi4lite_coverage.cg_reset unused_axi4lite_coverage_cg_reset_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 260 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_8
+ 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_7
+0
+0
+0
+64
+0
+ 0
+
+6
+0
+0
+0
+ 8 cp_reset 264 0 0 0 0 0 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn 138 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 7 applied 265 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_0 0 0 0 0 0 0 0
+ 0
+
+ 9 cp_rst_aw 268 0 0 0 0 0 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_1 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_1 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 4 idle 269 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_2 0 0 0 0 0 0 0
+ 0
+
+ 8 cp_rst_w 273 0 0 0 0 0 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_3 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_3 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 4 idle 274 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_2 0 0 0 0 0 0 0
+ 0
+
+ 9 cp_rst_ar 278 0 0 0 0 0 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_4 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_4 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 4 idle 279 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_2 0 0 0 0 0 0 0
+ 0
+
+ 8 cp_rst_b 283 0 0 0 0 0 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_5 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_5 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 4 idle 284 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_2 0 0 0 0 0 0 0
+ 0
+
+ 8 cp_rst_r 288 0 0 0 0 0 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_6 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_6 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 4 idle 289 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 140 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_reset_fn_2 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 axi4lite_agent_pkg::axi4lite_coverage::cg_read_data __coverage_axi4lite_coverage.cg_read_data unused_axi4lite_coverage_cg_read_data_loop_label axi4lite_agent_pkg 0 1 0 0 0  ( 0 
+)
+ 0 294 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_8
+ 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_7
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 7 cp_data 298 0 0 0 0 0 142 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn 142 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn 0 0 0 0 0 0 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 6 1 1 0 0 1 1 4 zero 299 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 all_ones 300 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 walk1_0 301 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 walk1_31 302 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_5a 303 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 alt_a5 304 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 144 axi4lite_agent_pkg_axi4lite_coverage_11_0::axi4lite_agent_pkg_axi4lite_coverage_11_0_axi4lite_agent_pkg_axi4lite_coverage_11_0_cg_read_data_fn_6 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group

@@ -1,0 +1,88 @@
+Command: /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/simv +UVM_TESTNAME=axi4lite_rand_delay_test +UVM_VERBOSITY=UVM_MEDIUM +ntb_random_seed=17550 -cm line+fsm+tgl+branch+assert -cm_hier /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/cov_hier.cfg -cm_dir /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage.vdb -cm_name axi4lite_rand_delay_test -l axi4lite_rand_delay_test.log +dump_vpd
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Jun  6 19:44 2026
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+Warning-[MON-RTOPTIGN] Runtime option ignored.
+  Ignoring -cm_hier for runtime. -cm_hier can be passed only at compile 
+  time.No action will be taken for this option at runtime.
+  Please refer to VCS documentation for more information.
+
+UVM_INFO @ 0: reporter [RNTST] Running test axi4lite_rand_delay_test...
+VCD+ Writer T-2022.06-SP1_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+UVM_INFO ../tests/axi4lite_base_test.sv(44) @ 0: uvm_test_top [TEST] Applying reset...
+UVM_INFO ../tests/axi4lite_base_test.sv(63) @ 245000: uvm_test_top [TEST] Reset released
+UVM_INFO ../tests/axi4lite_rand_delay_test.sv(12) @ 245000: uvm_test_top [TEST] Executing delay sequence to target timing coverage
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(429) @ 3865000: uvm_test_top.env.agt.cov [COV] === AXI4-Lite Functional Coverage Report ===
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(430) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_transaction : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(431) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_write_strobe: 73.48%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(432) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_write_data  : 11.11%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(433) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_prot        : 97.92%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(434) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_ordering    : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(435) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_delays      : 86.11%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(436) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_raw         : 83.33%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(437) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_handshake   : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(438) @ 3865000: uvm_test_top.env.agt.cov [COV]   cg_reset       : 0.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(439) @ 3865000: uvm_test_top.env.agt.cov [COV]   OVERALL        : 65.20%
+UVM_INFO ../env/axi4lite_scoreboard.sv(105) @ 3865000: uvm_test_top.env.scb [SCB] === Scoreboard Summary ===
+UVM_INFO ../env/axi4lite_scoreboard.sv(106) @ 3865000: uvm_test_top.env.scb [SCB]   Writes: 30 total, 30 pass, 0 fail
+UVM_INFO ../env/axi4lite_scoreboard.sv(108) @ 3865000: uvm_test_top.env.scb [SCB]   Reads : 20 total, 20 pass, 0 fail
+UVM_INFO ../env/axi4lite_scoreboard.sv(115) @ 3865000: uvm_test_top.env.scb [SCB] ALL CHECKS PASSED
+UVM_INFO ../tests/axi4lite_base_test.sv(75) @ 3865000: uvm_test_top [TEST] ==================================================
+UVM_INFO ../tests/axi4lite_base_test.sv(77) @ 3865000: uvm_test_top [TEST]                   TEST PASSED                     
+UVM_INFO ../tests/axi4lite_base_test.sv(81) @ 3865000: uvm_test_top [TEST] ==================================================
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 3865000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 3865000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   24
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV]    11
+[RNTST]     1
+[SCB]     4
+[TEST]     6
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time              3865000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3865000 ps
+CPU Time:      0.460 seconds;       Data structure size:   0.6Mb
+Sat Jun  6 19:44:13 2026

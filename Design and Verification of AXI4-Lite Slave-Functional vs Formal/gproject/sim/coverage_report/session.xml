@@ -1,0 +1,75 @@
+<session version="1.1" release="T-2022.06-SP1" timestp="2026-06-06 14:14:14 GMT">
+  <info>
+    <attr name="datetime" value="Sat Jun  6 19:44:14 2026
+"/>
+    <attr name="command" value="urg -dir /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage.vdb -report /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage_report -format both"/>
+    <attr name="top_instance" value="tb_top,uvm_custom_install_recording,uvm_custom_install_verdi_recording"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="58/58" />
+    <metric name="Toggle" value="446/486" />
+    <metric name="Branch" value="25/25" />
+    <metric name="Assert" value="8/8" />
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_prot">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_raw">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_transaction">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_ordering">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_delays">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_read_data">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_write_data">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_reset">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_write_strobe">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4lite_agent_pkg::axi4lite_coverage::cg_handshake">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="8/8" />
+      <score name="Score" value="100.00" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="14/16" />
+      <score name="Score" value="87.50" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="14/16" />
+      <score name="Score" value="87.50" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>

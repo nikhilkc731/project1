@@ -1,0 +1,351 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64+187 (git sha1 49b4f6d81, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Found 0 SCCs in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+Found 0 SCCs in module fvip_top.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Finding unused cells or wires in module \fvip_top..
+Removed 166 unused cells and 224 unused wires.
+<suppressed ~168 debug messages>
+
+7. Executing FORMALFF pass.
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1389 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1401 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1413 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1425 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1437 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1449 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1461 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:207:execute$1473 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1391 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1403 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1415 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1427 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1439 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1451 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1463 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:210:execute$1475 ($ff) from 2'x to 2'00
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1393 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1405 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1417 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1429 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1441 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1453 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1465 ($ff) from 32'x to 0
+Setting unused undefined initial value of $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.$auto$clk2fflogic.cc:213:execute$1477 ($ff) from 32'x to 0
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Finding unused cells or wires in module \fvip_top..
+Removed 78 unused cells and 78 unused wires.
+<suppressed ~79 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example...
+Checking module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props...
+Checking module fvip_top...
+Warning: Wire fvip_top.\wvalid is used but has no driver.
+Warning: Wire fvip_top.\wstrb [3] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [2] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [1] is used but has no driver.
+Warning: Wire fvip_top.\wstrb [0] is used but has no driver.
+Warning: Wire fvip_top.\wdata [31] is used but has no driver.
+Warning: Wire fvip_top.\wdata [30] is used but has no driver.
+Warning: Wire fvip_top.\wdata [29] is used but has no driver.
+Warning: Wire fvip_top.\wdata [28] is used but has no driver.
+Warning: Wire fvip_top.\wdata [27] is used but has no driver.
+Warning: Wire fvip_top.\wdata [26] is used but has no driver.
+Warning: Wire fvip_top.\wdata [25] is used but has no driver.
+Warning: Wire fvip_top.\wdata [24] is used but has no driver.
+Warning: Wire fvip_top.\wdata [23] is used but has no driver.
+Warning: Wire fvip_top.\wdata [22] is used but has no driver.
+Warning: Wire fvip_top.\wdata [21] is used but has no driver.
+Warning: Wire fvip_top.\wdata [20] is used but has no driver.
+Warning: Wire fvip_top.\wdata [19] is used but has no driver.
+Warning: Wire fvip_top.\wdata [18] is used but has no driver.
+Warning: Wire fvip_top.\wdata [17] is used but has no driver.
+Warning: Wire fvip_top.\wdata [16] is used but has no driver.
+Warning: Wire fvip_top.\wdata [15] is used but has no driver.
+Warning: Wire fvip_top.\wdata [14] is used but has no driver.
+Warning: Wire fvip_top.\wdata [13] is used but has no driver.
+Warning: Wire fvip_top.\wdata [12] is used but has no driver.
+Warning: Wire fvip_top.\wdata [11] is used but has no driver.
+Warning: Wire fvip_top.\wdata [10] is used but has no driver.
+Warning: Wire fvip_top.\wdata [9] is used but has no driver.
+Warning: Wire fvip_top.\wdata [8] is used but has no driver.
+Warning: Wire fvip_top.\wdata [7] is used but has no driver.
+Warning: Wire fvip_top.\wdata [6] is used but has no driver.
+Warning: Wire fvip_top.\wdata [5] is used but has no driver.
+Warning: Wire fvip_top.\wdata [4] is used but has no driver.
+Warning: Wire fvip_top.\wdata [3] is used but has no driver.
+Warning: Wire fvip_top.\wdata [2] is used but has no driver.
+Warning: Wire fvip_top.\wdata [1] is used but has no driver.
+Warning: Wire fvip_top.\wdata [0] is used but has no driver.
+Warning: Wire fvip_top.\rready is used but has no driver.
+Warning: Wire fvip_top.\bready is used but has no driver.
+Warning: Wire fvip_top.\awvalid is used but has no driver.
+Warning: Wire fvip_top.\awprot [2] is used but has no driver.
+Warning: Wire fvip_top.\awprot [1] is used but has no driver.
+Warning: Wire fvip_top.\awprot [0] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [3] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [2] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [1] is used but has no driver.
+Warning: Wire fvip_top.\awaddr [0] is used but has no driver.
+Warning: Wire fvip_top.\arvalid is used but has no driver.
+Warning: Wire fvip_top.\arprot [2] is used but has no driver.
+Warning: Wire fvip_top.\arprot [1] is used but has no driver.
+Warning: Wire fvip_top.\arprot [0] is used but has no driver.
+Warning: Wire fvip_top.\aresetn is used but has no driver.
+Warning: Wire fvip_top.\araddr [3] is used but has no driver.
+Warning: Wire fvip_top.\araddr [2] is used but has no driver.
+Warning: Wire fvip_top.\araddr [1] is used but has no driver.
+Warning: Wire fvip_top.\araddr [0] is used but has no driver.
+Found and reported 56 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+<suppressed ~48 debug messages>
+Optimizing module fvip_top.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 242 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 214 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 193 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 190 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+<suppressed ~156 debug messages>
+Finding identical cells in module `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 616 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 471 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 381 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 351 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+<suppressed ~795 debug messages>
+Finding identical cells in module `\fvip_top'.
+Computing hashes of 48 cells of `\fvip_top'.
+Finding duplicate cells in `\fvip_top'.
+Removed a total of 317 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 8 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 9 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 10 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 11 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 12 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 13 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 14 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 15 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 16 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 17 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 18 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 19 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 20 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 21 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 22 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 23 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 24 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 25 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 26 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 27 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 28 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 29 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 30 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 31 on $auto$clk2fflogic.cc:207:execute$1437 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 2 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 3 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 4 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 5 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 6 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 7 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 16 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 17 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 18 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 19 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 20 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 21 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 22 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 23 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 24 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 25 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 26 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 27 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 28 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 29 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 30 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 31 on $auto$clk2fflogic.cc:207:execute$1449 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 2 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 3 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 4 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 5 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 6 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 7 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 8 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 9 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 10 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 11 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 12 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 13 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 14 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 15 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 24 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 25 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 26 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 27 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 28 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 29 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 30 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 31 on $auto$clk2fflogic.cc:207:execute$1461 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 2 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 3 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 4 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 5 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 6 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 7 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 8 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 9 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 10 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 11 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 12 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 13 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 14 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 15 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 16 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 17 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 18 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 19 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 20 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 21 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 22 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 23 on $auto$clk2fflogic.cc:207:execute$1473 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:210:execute$1391 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:210:execute$1391 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:210:execute$1403 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:210:execute$1415 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 0 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 1 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 2 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 3 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 4 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 5 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 6 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 7 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 8 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 9 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 10 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 11 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 12 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 13 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 14 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 15 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 16 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 17 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 18 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 19 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 20 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 21 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 22 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 23 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 24 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 25 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 26 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 27 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 28 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 29 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 30 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Setting constant 0-bit at position 31 on $auto$clk2fflogic.cc:213:execute$1393 ($ff) from module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Finding unused cells or wires in module \fvip_top..
+Removed 0 unused cells and 413 unused wires.
+<suppressed ~3 debug messages>
+
+11.5. Rerunning OPT passes. (Removed registers in this run.)
+
+11.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Optimizing module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+Optimizing module fvip_top.
+
+11.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 188 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Computing hashes of 187 cells of `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+Finding duplicate cells in `$paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Computing hashes of 351 cells of `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding duplicate cells in `$paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props'.
+Finding identical cells in module `\fvip_top'.
+Computing hashes of 48 cells of `\fvip_top'.
+Finding duplicate cells in `\fvip_top'.
+Removed a total of 1 cells.
+
+11.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Finding unused cells or wires in module \fvip_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+11.10. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example..
+Finding unused cells or wires in module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props..
+Finding unused cells or wires in module \fvip_top..
+Removed 0 unused cells and 27 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+Warnings: 56 unique messages, 56 total
+End of script. Logfile hash: 8176993b70, time: 0.06s, user: 0.06s, system: 0.02s, MEM: 17.46 MB peak
+Yosys 0.64+187 (git sha1 49b4f6d81, clang++ 18.1.8 -fPIC -O3)
+Time spent: 37% 5x opt_clean (0 sec), 11% 2x write_rtlil (0 sec), ...

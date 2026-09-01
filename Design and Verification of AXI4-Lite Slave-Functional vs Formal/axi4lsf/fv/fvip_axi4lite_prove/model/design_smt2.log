@@ -1,0 +1,149 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.64+187 (git sha1 49b4f6d81, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `fvip_top'. Setting top module to fvip_top.
+
+2.1. Analyzing design hierarchy..
+Top module:  \fvip_top
+Used module:     $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+Used module:     $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+2.2. Analyzing design hierarchy..
+Top module:  \fvip_top
+Used module:     $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+Used module:     $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+Removed 0 unused modules.
+Module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props directly or indirectly contains formal properties -> setting "keep" attribute.
+Module fvip_top directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      200 wires
+     2152 wire bits
+       55 public wires
+      601 public wire bits
+       21 ports
+       98 port bits
+      187 cells
+       15   $anyinit
+       27   $anyseq
+        2   $eqx
+       31   $ff
+       11   $logic_and
+        8   $logic_not
+        1   $mem_v2
+       92   $mux
+
+=== $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      361 wires
+      971 wire bits
+       64 public wires
+      258 public wire bits
+       21 ports
+       98 port bits
+      351 cells
+        5   $add
+       18   $and
+       42   $anyinit
+       35   $assert
+       13   $assume
+       11   $eq
+        1   $eqx
+       86   $ff
+        3   $gt
+        6   $le
+       24   $logic_and
+       17   $logic_not
+       85   $mux
+        5   $not
+
+=== fvip_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+       98 wire bits
+       21 public wires
+       98 public wire bits
+        1 ports
+        1 port bits
+       46 cells
+       46   $anyseq
+        2 submodules
+        1   $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+        1   $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      584 fvip_top
+      187 $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+      351 $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+        +----------Count including submodules.
+        | 
+      582 wires
+     3221 wire bits
+      140 public wires
+      957 public wire bits
+       43 ports
+      197 port bits
+        - memories
+        - memory bits
+        - processes
+      584 cells
+        5   $add
+       18   $and
+       57   $anyinit
+       73   $anyseq
+       35   $assert
+       13   $assume
+       11   $eq
+        3   $eqx
+      117   $ff
+        3   $gt
+        6   $le
+       35   $logic_and
+       25   $logic_not
+        1   $mem_v2
+      177   $mux
+        5   $not
+        2 submodules
+        1   $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example
+        1   $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module $paramod$e1dd5b8fb6eee918a6b9682e8a20bfc047485e0b\fvip_axi4lite_props.
+Creating SMT-LIBv2 representation of module $paramod$bc5d551a6ad5b1b5603d1cd5e1ec4dd4186c2b32\axi4lite_slave_example.
+Creating SMT-LIBv2 representation of module fvip_top.
+
+End of script. Logfile hash: 12964ecd7c, time: 0.02s, user: 0.02s, system: 0.01s, MEM: 16.38 MB peak
+Yosys 0.64+187 (git sha1 49b4f6d81, clang++ 18.1.8 -fPIC -O3)
+Time spent: 74% 2x write_smt2 (0 sec), 13% 2x read_rtlil (0 sec), ...

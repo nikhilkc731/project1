@@ -1,0 +1,12 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT        
+ 97.94 100.00  91.77 --     100.00 100.00 tb_top 
+  
+  ----------------
+  SCORE  LINE   TOGGLE FSM    BRANCH ASSERT        
+   95.92 --      91.84 --     --     100.00 axi_if 
+   97.24 100.00  91.72 --     100.00 --     dut    
+

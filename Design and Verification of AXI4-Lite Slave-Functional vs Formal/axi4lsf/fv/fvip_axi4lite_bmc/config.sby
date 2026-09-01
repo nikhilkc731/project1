@@ -1,0 +1,69 @@
+# =============================================================================
+# fvip_axi4lite.sby
+#
+# SymbiYosys (OSS CAD Suite) script for the AXI4-Lite slave register-file FVIP
+#
+# Two tasks are defined:
+#
+#   prove  — BMC (depth 20) + k-induction (depth 20) with boolector
+#            Proves all assert() properties for all reachable states.
+#
+#   cover  — Forward-reachability traces (depth 25) with boolector
+#            Finds witness traces for all cover() properties.
+#
+# Usage (from the directory containing this file):
+#
+#   sby -f fvip_axi4lite.sby prove   # run prove task only
+#   sby -f fvip_axi4lite.sby cover   # run cover task only
+#   sby -f fvip_axi4lite.sby         # run both tasks (default: first listed)
+#
+# OSS CAD Suite installation assumed in PATH.
+# Tested with SymbiYosys ≥ 0.40 / Yosys ≥ 0.36.
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# TASK: prove  (BMC + k-induction)
+# ---------------------------------------------------------------------------
+[options]
+mode bmc
+depth 60
+
+
+
+# ---------------------------------------------------------------------------
+# ENGINES
+# ---------------------------------------------------------------------------
+[engines]
+# smtbmc uses the SMT-LIB2 back-end; boolector is fast for bit-vector proofs.
+smtbmc --unroll boolector
+
+# ---------------------------------------------------------------------------
+# SCRIPT  (Yosys synthesis commands)
+#
+# read_verilog -sv   — parse SystemVerilog (assertions, $past, etc.)
+# -DFORMAL           — optional define preserved for compatibility; not used
+#                      inside the RTL because we avoid `ifdef
+# chparam            — override parameters at elaboration time
+# prep -top          — elaborate, flatten, and optimise for formal
+# ---------------------------------------------------------------------------
+[script]
+read_verilog -sv /home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv
+read_verilog -sv /home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv
+read_verilog -sv /home/nikhil/projects/axi4lsf/fv/fvip_top.sv
+prep -top fvip_top
+clk2fflogic
+#flatten
+#opt_clean -purge
+#opt -full
+
+
+
+# ---------------------------------------------------------------------------
+# FILES
+# (paths relative to the directory where sby is invoked)
+# ---------------------------------------------------------------------------
+[files]
+/home/nikhil/projects/axi4lsf/rtl/axi4lite_slave_example.sv
+/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv
+/home/nikhil/projects/axi4lsf//fv/fvip_top.sv
+

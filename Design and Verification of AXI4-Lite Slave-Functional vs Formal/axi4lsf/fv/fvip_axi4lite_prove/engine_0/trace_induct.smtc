@@ -1,0 +1,299 @@
+initial
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_ARREADY[0:0]#sampled$1512] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_AWREADY[0:0]#sampled$1602] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_BRESP[1:0]#sampled$1542] #b11)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_BVALID[0:0]#sampled$1552] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_RDATA[31:0]#sampled$1482] #b11111111111111111111111111111111)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_RRESP[1:0]#sampled$1492] #b11)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_RVALID[0:0]#sampled$1502] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/S_AXI_WREADY[0:0]#sampled$1562] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/ar_addr_latch[3:0]#sampled$1532] #b1111)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/ar_pending[0:0]#sampled$1522] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/aw_addr_latch[3:0]#sampled$1622] #b1111)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/aw_pending[0:0]#sampled$1612] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/w_data_latch[31:0]#sampled$1582] #b11111111111111111111111111111111)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/w_pending[0:0]#sampled$1572] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$$0/w_strb_latch[3:0]#sampled$1592] #b1111)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_ARREADY#sampled$1510] false)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_AWREADY#sampled$1600] false)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_BRESP#sampled$1540] #b00)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_BVALID#sampled$1550] false)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_RDATA#sampled$1480] #b00000000000000000000000000000000)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_RRESP#sampled$1490] #b00)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_RVALID#sampled$1500] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/S_AXI_WREADY#sampled$1560] false)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/ar_addr_latch#sampled$1530] #b0011)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/ar_pending#sampled$1520] false)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/aw_addr_latch#sampled$1620] #b0011)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/aw_pending#sampled$1610] false)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/w_data_latch#sampled$1580] #b00000000000000000000000000000000)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/w_pending#sampled$1570] false)
+assume (= [u_dut.$auto$clk2fflogic.cc:101:sample_data$/w_strb_latch#sampled$1590] #b1000)
+assume (= [u_dut.$auto$clk2fflogic.cc:190:execute$regs#0#past_clk#/S_AXI_ACLK$1384] true)
+assume (= [u_dut.$auto$clk2fflogic.cc:206:execute$regs#0#en_q$1388] #b00000000000000000000000000000000)
+assume (= [u_dut.$auto$clk2fflogic.cc:206:execute$regs#4#en_q$1436] #b00000000000000000000000000000000)
+assume (= [u_dut.$auto$clk2fflogic.cc:206:execute$regs#5#en_q$1448] #b00000000000000000000000000000000)
+assume (= [u_dut.$auto$clk2fflogic.cc:206:execute$regs#6#en_q$1460] #b00000000000000000000000000000000)
+assume (= [u_dut.$auto$clk2fflogic.cc:206:execute$regs#7#en_q$1472] #b00000000000000000000000000000000)
+assume (= [u_dut.$auto$clk2fflogic.cc:209:execute$regs#2#addr_q$1414] #b10)
+assume (= [u_dut.$auto$clk2fflogic.cc:209:execute$regs#3#addr_q$1426] #b11)
+assume (= [u_dut.$auto$clk2fflogic.cc:209:execute$regs#4#addr_q$1438] #b11)
+assume (= [u_dut.$auto$clk2fflogic.cc:209:execute$regs#5#addr_q$1450] #b11)
+assume (= [u_dut.$auto$clk2fflogic.cc:209:execute$regs#6#addr_q$1462] #b11)
+assume (= [u_dut.$auto$clk2fflogic.cc:209:execute$regs#7#addr_q$1474] #b11)
+assume (= [u_dut.$auto$clk2fflogic.cc:212:execute$regs#4#data_q$1440] #b11111111111111111111111111111111)
+assume (= [u_dut.$auto$clk2fflogic.cc:212:execute$regs#5#data_q$1452] #b11111111111111111111111111111111)
+assume (= [u_dut.$auto$clk2fflogic.cc:212:execute$regs#6#data_q$1464] #b11111111111111111111111111111111)
+assume (= [u_dut.$auto$clk2fflogic.cc:212:execute$regs#7#data_q$1476] #b11111111111111111111111111111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$0$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505$416$0[0:0]$639#sampled$2478] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$0/f_ar_cnt[7:0]#sampled$2528] #b11111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$0/f_aw_cnt[7:0]#sampled$2498] #b11111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$0/f_b_cnt[7:0]#sampled$2518] #b11111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$0/f_r_cnt[7:0]#sampled$2538] #b11111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$0/f_w_cnt[7:0]#sampled$2508] #b11111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:183$482_EN#sampled$1706] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:211$507_EN#sampled$1762] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:220$520_EN#sampled$1804] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:236$527_EN#sampled$1818] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:237$529_EN#sampled$1832] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:257$533_EN#sampled$1846] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:258$534_EN#sampled$1860] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:259$535_EN#sampled$1874] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278$543_EN#sampled$1888] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279$545_EN#sampled$1902] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280$547_EN#sampled$1916] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:333$563_EN#sampled$2000] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assert$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:450$599_EN#sampled$2112] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:102$421_EN#sampled$2126] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:109$430_EN#sampled$2168] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:133$445_EN#sampled$2196] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:143$459_EN#sampled$2224] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$assume$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:153$473_EN#sampled$2266] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:110$433_Y#sampled$2160] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:111$435_Y#sampled$2174] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:134$447_Y#sampled$2202] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:135$449_Y#sampled$2216] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:144$461_Y#sampled$2244] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:145$463_Y#sampled$2258] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:154$475_Y#sampled$2286] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:155$477_Y#sampled$2300] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:183$483_Y#sampled$1642] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:184$485_Y#sampled$1656] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:185$487_Y#sampled$1670] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:186$489_Y#sampled$1824] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:187$491_Y#sampled$1698] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:188$493_Y#sampled$1712] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:189$495_Y#sampled$1726] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:190$497_Y#sampled$1838] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:212$509_Y#sampled$1768] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:221$522_Y#sampled$1796] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$eq$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:222$524_Y#sampled$1810] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$gt$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:373$587_Y#sampled$2020] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$gt$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:374$589_Y#sampled$2034] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$gt$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:382$593_Y#sampled$2048] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$le$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:333$564_Y#sampled$1936] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$le$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:334$566_Y#sampled$1950] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$le$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:340$571_Y#sampled$1964] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$le$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:341$574_Y#sampled$1978] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$le$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:347$578_Y#sampled$1992] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$le$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:352$583_Y#sampled$2006] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$logic_not$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:102$422_Y#sampled$2132] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$logic_not$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278$544_Y#sampled$2062] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$logic_not$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279$546_Y#sampled$2076] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$logic_not$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280$548_Y#sampled$2104] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$logic_not$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:452$604_Y#sampled$2090] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$logic_not$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:454$608_Y#sampled$2118] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:108$381$0#sampled$2836] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:108$382$0#sampled$2846] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:110$383$0#sampled$2856] #b0000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:111$384$0#sampled$2866] #b000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:131$385$0#sampled$2786] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:132$386$0#sampled$2796] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:132$387$0#sampled$2806] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:134$388$0#sampled$2816] #b0000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:135$389$0#sampled$2826] #b000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:141$390$0#sampled$2736] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:142$391$0#sampled$2746] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:142$392$0#sampled$2756] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:144$393$0#sampled$2766] #b11111111111111111111111111111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:145$394$0#sampled$2776] #b1111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:151$395$0#sampled$2686] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:152$396$0#sampled$2696] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:152$397$0#sampled$2706] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:154$398$0#sampled$2716] #b0000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:155$399$0#sampled$2726] #b000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:182$400$0#sampled$2676] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:209$401$0#sampled$2636] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:210$402$0#sampled$2646] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:210$403$0#sampled$2656] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:212$404$0#sampled$2666] #b00)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:218$405$0#sampled$2586] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:219$406$0#sampled$2596] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:219$407$0#sampled$2606] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:221$408$0#sampled$2616] #b00000000000000000000000000000000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:222$409$0#sampled$2626] #b00)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:277$410$0#sampled$2546] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:278$411$0#sampled$2556] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:279$412$0#sampled$2566] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:280$413$0#sampled$2576] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:449$414$0#sampled$2486] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:504$415$0#sampled$2466] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:505$416$0#sampled$2476] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$$past$/home/nikhil/projects/axi4lsf/fv/fvip_axi4lite_props.sv:566$417$0#sampled$2456] false)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/araddr#sampled$2718] #b1111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/aresetn#sampled$2548] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/arprot#sampled$2728] #b111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/arready#sampled$2578] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/arvalid#sampled$1880] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/arvalid#sampled$2698] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/awaddr#sampled$2818] #b1111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/awprot#sampled$2828] #b111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/awready#sampled$2558] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/awvalid#sampled$1852] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/awvalid#sampled$2798] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/bready#sampled$2658] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/bresp#sampled$2668] #b11)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/bvalid#sampled$1754] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/bvalid#sampled$2648] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/f_ar_cnt#sampled$2526] #b01111001)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/f_aw_cnt#sampled$2496] #b00000001)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/f_b_cnt#sampled$2516] #b00000001)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/f_past_valid#sampled$2876] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/f_r_cnt#sampled$2536] #b01111000)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/f_w_cnt#sampled$2506] #b00000010)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/rdata#sampled$2618] #b11111111111111111111111111111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/rready#sampled$2608] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/rresp#sampled$2628] #b11)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/rvalid#sampled$1782] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/rvalid#sampled$2598] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/wdata#sampled$2768] #b11111111111111111111111111111111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/wready#sampled$2568] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/wstrb#sampled$2778] #b1111)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/wvalid#sampled$2230] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$/wvalid#sampled$2748] true)
+assume (= [u_props.$auto$clk2fflogic.cc:101:sample_data$1'1#sampled$2878] true)
+assume (= [u_props.$auto$clk2fflogic.cc:87:sample_control_edge$/clk#sampled$1630] true)
+assume (= (select [u_dut.regs] #b00) #b11111111111111111111111111111111)
+
+state 0
+assume (= [clk] true)
+
+state 1
+assume (= [clk] true)
+
+state 2
+assume (= [clk] true)
+
+state 3
+assume (= [clk] true)
+
+state 4
+assume (= [clk] true)
+
+state 5
+assume (= [clk] true)
+
+state 6
+assume (= [clk] true)
+
+state 7
+assume (= [clk] true)
+
+state 8
+assume (= [clk] true)
+
+state 9
+assume (= [clk] true)
+
+state 10
+assume (= [clk] true)
+
+state 11
+assume (= [clk] true)
+
+state 12
+assume (= [clk] true)
+
+state 13
+assume (= [clk] true)
+
+state 14
+assume (= [clk] true)
+
+state 15
+assume (= [clk] true)
+
+state 16
+assume (= [clk] true)
+
+state 17
+assume (= [clk] true)
+
+state 18
+assume (= [clk] true)
+
+state 19
+assume (= [clk] true)
+
+state 20
+assume (= [clk] true)
+
+state 21
+assume (= [clk] true)
+
+state 22
+assume (= [clk] true)
+
+state 23
+assume (= [clk] true)
+
+state 24
+assume (= [clk] true)
+
+state 25
+assume (= [clk] true)
+
+state 26
+assume (= [clk] true)
+
+state 27
+assume (= [clk] true)
+
+state 28
+assume (= [clk] true)
+
+state 29
+assume (= [clk] true)
+
+state 30
+assume (= [clk] true)
+
+state 31
+assume (= [clk] true)
+
+state 32
+assume (= [clk] true)
+
+state 33
+assume (= [clk] true)
+
+state 34
+assume (= [clk] true)
+
+state 35
+assume (= [clk] true)
+
+state 36
+assume (= [clk] true)
+
+state 37
+assume (= [clk] true)
+
+state 38
+assume (= [clk] true)
+
+state 39
+assume (= [clk] false)
+
+state 40
+assume (= [clk] true)

@@ -1,0 +1,22 @@
+Tests
+
+Total Coverage Summary 
+SCORE  LINE   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 98.35 100.00  91.77 --     100.00 100.00 100.00 
+
+
+Total tests in report: 11
+-------------------------------------------------------------------------------
+Data from the following tests was used to generate this report
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_write_test         
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_read_test          
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_b2b_test           
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_strobe_test        
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_prot_test          
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_delay_test         
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_data_pattern_test  
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_random_test        
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_reset_test         
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_rand_delay_test    
+/home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage/axi4lite_full_coverage_test 
+

@@ -1,0 +1,170 @@
+Command: /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/simv +UVM_TESTNAME=axi4lite_full_coverage_test +UVM_VERBOSITY=UVM_MEDIUM +ntb_random_seed=17550 -cm line+fsm+tgl+branch+assert -cm_hier /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/cov_hier.cfg -cm_dir /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage.vdb -cm_name axi4lite_full_coverage_test -l axi4lite_full_coverage_test.log +dump_vpd
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Jun  6 19:44 2026
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+Warning-[MON-RTOPTIGN] Runtime option ignored.
+  Ignoring -cm_hier for runtime. -cm_hier can be passed only at compile 
+  time.No action will be taken for this option at runtime.
+  Please refer to VCS documentation for more information.
+
+UVM_INFO @ 0: reporter [RNTST] Running test axi4lite_full_coverage_test...
+VCD+ Writer T-2022.06-SP1_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+UVM_INFO ../tests/axi4lite_base_test.sv(44) @ 0: uvm_test_top [TEST] Applying reset...
+UVM_INFO ../tests/axi4lite_base_test.sv(63) @ 245000: uvm_test_top [TEST] Reset released
+UVM_INFO ../tests/axi4lite_full_coverage_test.sv(22) @ 245000: uvm_test_top [TEST] === Full Coverage Test ===
+UVM_INFO ../seq_lib/axi4lite_single_read_seq.sv(15) @ 245000: uvm_test_top.env.agt.sqr@@rd_seq [SEQ] === Single Read Sequence (post-reset) ===
+UVM_INFO ../seq_lib/axi4lite_single_read_seq.sv(19) @ 285000: uvm_test_top.env.agt.sqr@@rd_seq [SEQ] Read 0x00000000 from addr 0x0
+UVM_INFO ../seq_lib/axi4lite_single_read_seq.sv(19) @ 325000: uvm_test_top.env.agt.sqr@@rd_seq [SEQ] Read 0x00000000 from addr 0x4
+UVM_INFO ../seq_lib/axi4lite_single_read_seq.sv(19) @ 365000: uvm_test_top.env.agt.sqr@@rd_seq [SEQ] Read 0x00000000 from addr 0x8
+UVM_INFO ../seq_lib/axi4lite_single_read_seq.sv(19) @ 405000: uvm_test_top.env.agt.sqr@@rd_seq [SEQ] Read 0x00000000 from addr 0xc
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(16) @ 405000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] === Single Write Sequence ===
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 445000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Wrote 0xdeadbeef to addr 0x0
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 485000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Wrote 0xcafebabe to addr 0x4
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 525000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Wrote 0x12345678 to addr 0x8
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(20) @ 565000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Wrote 0xa5a5a5a5 to addr 0xc
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 605000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Read 0xdeadbeef from addr 0x0 (exp 0xdeadbeef)
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 645000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Read 0xcafebabe from addr 0x4 (exp 0xcafebabe)
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 685000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Read 0x12345678 from addr 0x8 (exp 0x12345678)
+UVM_INFO ../seq_lib/axi4lite_single_write_seq.sv(26) @ 725000: uvm_test_top.env.agt.sqr@@wr_seq [SEQ] Read 0xa5a5a5a5 from addr 0xc (exp 0xa5a5a5a5)
+UVM_INFO ../seq_lib/axi4lite_write_read_b2b_seq.sv(16) @ 725000: uvm_test_top.env.agt.sqr@@b2b_seq [SEQ] === Back-to-Back Write/Read Sequence ===
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(18) @ 1685000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] === Strobe Pattern Sequence ===
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 1805000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b0001 rdata=0x000000ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 1925000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b0010 rdata=0x0000ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2045000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b0100 rdata=0x00ff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2165000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b1000 rdata=0xff000000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2285000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b0011 rdata=0x0000ffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2405000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b1100 rdata=0xffff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2525000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b0101 rdata=0x00ff00ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2645000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b1010 rdata=0xff00ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2765000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b0111 rdata=0x00ffffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 2885000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b1110 rdata=0xffffff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3005000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x0 strb=0b1111 rdata=0xffffffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3125000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b0001 rdata=0x000000ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3245000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b0010 rdata=0x0000ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3365000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b0100 rdata=0x00ff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3485000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b1000 rdata=0xff000000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3605000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b0011 rdata=0x0000ffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3725000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b1100 rdata=0xffff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3845000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b0101 rdata=0x00ff00ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 3965000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b1010 rdata=0xff00ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4085000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b0111 rdata=0x00ffffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4205000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b1110 rdata=0xffffff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4325000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x4 strb=0b1111 rdata=0xffffffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4445000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b0001 rdata=0x000000ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4565000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b0010 rdata=0x0000ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4685000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b0100 rdata=0x00ff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4805000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b1000 rdata=0xff000000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 4925000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b0011 rdata=0x0000ffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5045000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b1100 rdata=0xffff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5165000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b0101 rdata=0x00ff00ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5285000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b1010 rdata=0xff00ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5405000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b0111 rdata=0x00ffffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5525000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b1110 rdata=0xffffff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5645000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0x8 strb=0b1111 rdata=0xffffffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5765000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b0001 rdata=0x000000ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 5885000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b0010 rdata=0x0000ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6005000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b0100 rdata=0x00ff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6125000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b1000 rdata=0xff000000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6245000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b0011 rdata=0x0000ffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6365000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b1100 rdata=0xffff0000
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6485000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b0101 rdata=0x00ff00ff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6605000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b1010 rdata=0xff00ff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6725000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b0111 rdata=0x00ffffff
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6845000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b1110 rdata=0xffffff00
+UVM_INFO ../seq_lib/axi4lite_strobe_seq.sv(31) @ 6965000: uvm_test_top.env.agt.sqr@@strb_seq [SEQ] addr=0xc strb=0b1111 rdata=0xffffffff
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(14) @ 6965000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] === Protection Type Sequence ===
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7045000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b000 write_data=0x10000000 read_data=0x10000000
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7125000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b001 write_data=0x10000001 read_data=0x10000001
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7205000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b010 write_data=0x10000002 read_data=0x10000002
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7285000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b011 write_data=0x10000003 read_data=0x10000003
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7365000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b100 write_data=0x10000004 read_data=0x10000004
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7445000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b101 write_data=0x10000005 read_data=0x10000005
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7525000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b110 write_data=0x10000006 read_data=0x10000006
+UVM_INFO ../seq_lib/axi4lite_prot_seq.sv(19) @ 7605000: uvm_test_top.env.agt.sqr@@prot_seq [SEQ] prot=0b111 write_data=0x10000007 read_data=0x10000007
+UVM_INFO ../seq_lib/axi4lite_delay_seq.sv(15) @ 7605000: uvm_test_top.env.agt.sqr@@dly_seq [SEQ] === Delay Variation Sequence ===
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(25) @ 8345000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] === Data Pattern Sequence ===
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8425000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0x00000000 readback=0x00000000
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8505000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0xffffffff readback=0xffffffff
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8585000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0x00000001 readback=0x00000001
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8665000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0x80000000 readback=0x80000000
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8745000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0x5a5a5a5a readback=0x5a5a5a5a
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8825000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0xa5a5a5a5 readback=0xa5a5a5a5
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8905000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0x0000000f readback=0x0000000f
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 8985000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0x0000abcd readback=0x0000abcd
+UVM_INFO ../seq_lib/axi4lite_data_pattern_seq.sv(30) @ 9065000: uvm_test_top.env.agt.sqr@@dp_seq [SEQ] pattern=0xfedcba98 readback=0xfedcba98
+UVM_INFO ../seq_lib/axi4lite_random_seq.sv(21) @ 9065000: uvm_test_top.env.agt.sqr@@rand_seq [SEQ] === Random Sequence: 200 transactions ===
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(429) @ 22195000: uvm_test_top.env.agt.cov [COV] === AXI4-Lite Functional Coverage Report ===
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(430) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_transaction : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(431) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_write_strobe: 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(432) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_write_data  : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(433) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_prot        : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(434) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_ordering    : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(435) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_delays      : 88.89%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(436) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_raw         : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(437) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_handshake   : 100.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(438) @ 22195000: uvm_test_top.env.agt.cov [COV]   cg_reset       : 0.00%
+UVM_INFO ../axi4lite_agent/axi4lite_coverage.sv(439) @ 22195000: uvm_test_top.env.agt.cov [COV]   OVERALL        : 88.89%
+UVM_INFO ../env/axi4lite_scoreboard.sv(105) @ 22195000: uvm_test_top.env.scb [SCB] === Scoreboard Summary ===
+UVM_INFO ../env/axi4lite_scoreboard.sv(106) @ 22195000: uvm_test_top.env.scb [SCB]   Writes: 230 total, 230 pass, 0 fail
+UVM_INFO ../env/axi4lite_scoreboard.sv(108) @ 22195000: uvm_test_top.env.scb [SCB]   Reads : 184 total, 184 pass, 0 fail
+UVM_INFO ../env/axi4lite_scoreboard.sv(115) @ 22195000: uvm_test_top.env.scb [SCB] ALL CHECKS PASSED
+UVM_INFO ../tests/axi4lite_base_test.sv(75) @ 22195000: uvm_test_top [TEST] ==================================================
+UVM_INFO ../tests/axi4lite_base_test.sv(77) @ 22195000: uvm_test_top [TEST]                   TEST PASSED                     
+UVM_INFO ../tests/axi4lite_base_test.sv(81) @ 22195000: uvm_test_top [TEST] ==================================================
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 22195000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 22195000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  105
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV]    11
+[RNTST]     1
+[SCB]     4
+[SEQ]    81
+[TEST]     6
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time             22195000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 22195000 ps
+CPU Time:      0.560 seconds;       Data structure size:   0.6Mb
+Sat Jun  6 19:44:14 2026

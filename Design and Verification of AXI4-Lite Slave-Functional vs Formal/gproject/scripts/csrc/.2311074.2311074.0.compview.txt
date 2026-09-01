@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1780755215.732684317, "rt":11.03, "ut":9.44, "st":0.24}}
+{"vcselab":{"timestamp_begin":1780755226.826055221, "rt":0.57, "ut":0.33, "st":0.07}}
+{"link":{"timestamp_begin":1780755227.433884121, "rt":0.45, "ut":0.28, "st":0.12}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1780755214.980620694}
+{"VCS_COMP_START_TIME": 1780755214.980620694}
+{"VCS_COMP_END_TIME": 1780755232.764526469}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -ntb_opts uvm-1.2 -timescale=1ns/1ps -f filelist.f -l /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/compile.log -o /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/simv -debug_access+all +lint=TFIPC-L -assert svaext -cm line+fsm+tgl+branch+assert -cm_hier /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/cov_hier.cfg -cm_dir /home1/BPRN29/NikhilKC/VLSI_RN_ONLINE/gproject/scripts/../sim/coverage.vdb +define+UVM_NO_DEPRECATED +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR -CFLAGS -DVCS"}
+{"vcs1": {"peak_mem": 2311874}}
+{"stitch_vcselab": {"peak_mem": 2312644}}

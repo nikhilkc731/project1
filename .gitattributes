@@ -4,3 +4,10 @@
 *.smt linguist-generated=true
 *.smt2 linguist-generated=true
 *.smtc linguist-generated=true
+*.html linguist-generated=true
+*.htm linguist-generated=true
+*.c linguist-generated=true
+*.h linguist-generated=true
+*.v linguist-generated=true
+*.js linguist-generated=true
+*.sh linguist-generated=true

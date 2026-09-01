@@ -1,3 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 *.il linguist-generated=true
+*.smt linguist-generated=true
+*.smt2 linguist-generated=true
+*.smtc linguist-generated=true
